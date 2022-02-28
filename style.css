@@ -1,0 +1,259 @@
+* {
+    font-family: Calibri, sans-serif;
+
+} 
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background: #ececec75;
+    margin: -10px -10px;
+}
+
+.logo {
+    margin-right: auto;
+    width: 375px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 40px 0px 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: rgb(28, 83, 156);
+}
+
+/* About */
+#about-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+#about-subtitle {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#resume-button {
+    padding: 10px 45px;
+    background-color: #203864;
+    border-radius: 10px;
+    margin: 0px 25px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#linkedin-button {
+    padding: 10px 30px;
+    background-color: #0e76a8;
+    border-radius: 10px;
+    margin: 0px 25px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#github-button {
+    padding: 10px 40px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0px 25px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#email-button {
+    padding: 10px 45px;
+    background-color: #516e81;
+    border-radius: 10px;
+    margin: 0px 25px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#resume-button:hover {
+    background-color:#182542;
+}
+
+#linkedin-button:hover {
+    background-color:#0d5679;
+}
+
+#github-button:hover {
+    background-color:#1b1b1b;
+}
+
+#email-button:hover {
+    background-color:#486172;
+}
+
+/* Sections */
+.section-title {
+    text-align: left;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.section-subtitle {
+    text-align: left;
+}
+
+.section-break {
+    width: 800px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 0;
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+/* Experience */
+#experience {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-block {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 30px;
+    border-left: solid;
+    border-width: 4px;
+}
+
+#bdo-experience {
+    border-color: #C00000;
+}
+
+#jdc-experience {
+    border-color: #00428A;
+}
+
+#ilios-experience {
+    border-color: #00B0F0;
+}
+
+#tutoring-experience {
+    border-color: #2B8D2B;
+}
+
+.experience-title {
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+.experience-link {
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(41, 120, 223);
+}
+
+.experience-link:hover {
+    text-decoration: underline;
+    color:rgb(28, 83, 156);
+}
+
+.experience-date {
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+}
+
+.experience-description {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Projects */
+#projects {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-block {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 30px;
+    border-left: solid;
+    border-width: 4px;
+}
+
+#reddit-project {
+    border-color: #FF4500;
+}
+
+#careerme-project {
+    border-color: #5ca3b4;
+}
+
+#voiceassistant-project {
+    border-color: #2d792d;
+}
+
+.project-title {
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+.project-link {
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(41, 120, 223);
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color:rgb(28, 83, 156);
+}
+
+.project-date {
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 20px;
+    margin: 0;
+}
+
+.language-tags {
+    display: inline-block;
+    font-family: Consolas, monospace;
+    padding: 0px 10px;
+    margin: 5px 5px 0px 0px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+    font-weight: bold;
+}

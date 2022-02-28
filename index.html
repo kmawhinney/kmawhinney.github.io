@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kealan Mawhinney Portfolio</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/0de5f50608.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <img class="logo" src="images/Personal Profile Logo.png" alt="logo">
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About -->
+        <section id="about">
+            <h1 id="about-title">Hi, I'm Kealan! Nice to meet you!</h1>
+            <p id="about-subtitle">
+                I'm a student at UBC Sauder School of Business, and a self-taught developer.
+                <br>
+                Read more about my experience and projects below, and feel free to contact me with any inqueries!                
+            </p>
+            
+        <!-- Social Links -->
+        <div class="social-links">
+            <a class="social-button" id="resume-button" href="" target="_blank">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+            <a class="social-button" id="linkedin-button" href="https://www.linkedin.com/in/kealanmawhinney/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a class="social-button" id="github-button" href="https://github.com/kmawhinney" target="_blank">
+                <i class="fab fa-github"></i></ion-icon> GitHub
+            </a>
+            <a class="social-button" id="email-button" href="mailto:kealan.mawhinney@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+        </section>
+
+        <hr class="section-break">
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+
+        <div class="experience-block" id="bdo-experience">
+            <span class="experience-title">
+                <a class="experience-link" href="https://www.bdo.ca/en-ca/home/" target="_blank">BDO Canada</a> ∙ Management Consulting Analyst
+            </span>
+            <p class="experience-date">August 2021 - December 2021</p>
+            <ul class="experience-description">
+                <li>Worked with four unique clients to bring their products from innovation to the market as part of the go-to-market strategy team</li>
+                <li>Generated $5,000 in revenue for BDO Canada by delivering market research, building presentations, and creating solutions for product development projects</li>
+            </ul>
+        </div>
+
+        <div class="experience-block" id="jdc-experience">
+            <span class="experience-title">
+                <a class="experience-link" href="https://www.sauderjdcwest.com/" target="_blank">Sauder JDC West</a> ∙ Summer Development Team
+            </span>
+            <p class="experience-date">May 2021 - July 2021</p>
+            <ul class="experience-description">
+                <li>Developed eight report-style pitch decks to present analysis and solutions to weekly business cases from Harvard, Stanford, and Ivey</li>
+                <li>Professional case analysis and presentation growth through weekly coaching sessions</li>
+            </ul>
+        </div>
+
+        <div class="experience-block" id="ilios-experience">
+            <span class="experience-title">
+                <a class="experience-link" href="https://www.iliosinvestments.ca/" target="_blank">Ilios Investment Foundation</a> ∙ Junior Analyst & First Year Representative
+            </span>
+            <p class="experience-date">January 2021 - May 2021</p>
+            <ul class="experience-description">
+                <li>Created a stock pitch and contributed to equity reports through industry analysis, financial assessment, and DCF valuations</li>
+                <li>Increased LinkedIn engagement by 125% by marketing Olympus Capital’s events to other students through LinkedIn, Instagram, and Facebook posts</li>
+            </ul>
+        </div>
+
+        <div class="experience-block" id="tutoring-experience">
+            <span class="experience-title">
+                <a class="experience-link" href="http://peertutoring.ca/" target="_blank">Peer Tutoring</a> ∙ Founder
+            </span>
+            <p class="experience-date">January 2019 - September 2020</p>
+            <ul class="experience-description">
+                <li>Helped students increase their grades by over 20% through one-on-one tutoring, tailored video tutorials, and self-made assignments</li>
+                <li>Expanded clientele by 50% by building peertutoring.ca and learning how to optimize the SEO to increase website traffic</li>
+            </ul>
+        </div>
+
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+        <div class="project-block" id="reddit-project">
+            <span class="project-title">
+                <a class="project-link" href="https://github.com/kmawhinney/reddit-keyword-scraper" target="_blank">Reddit Keyword Popularity Scraper</a>
+            </span>
+            <p class="project-date">February 2022 - Present</p>
+            <ul class="project-description">
+                <li>Developed a Python script that returns the most popular keywords and count of user-inputted keywords in submissions for any subreddit; working on adding comment functionality and an automated bot</li>
+                <li>Designed using the Reddit API to scrape data from reddit.com, and the Pushshift API to expand query and rate limits for increased data set size</li>
+            </ul>
+            <span>
+                <p class="language-tags">Python</p>
+                <p class="language-tags">Rest API</p>
+            </span>
+        </div>
+
+        <div class="project-block" id="careerme-project">
+            <span class="project-title">
+                <a class="project-link" href="http://careerme.ca/" target="_blank">CareerMe Website</a>
+            </span>
+            <p class="project-date">January 2022 - Present</p>
+            <ul class="project-description">
+                <li>Created web platform called CareerMe, which helps students understand every career available to them; MVP being developed through WordPress, full-release will be built with JavaScript (React) and Python (Flask)</li>
+                <li>Building entry-level job scraper using Beautiful Soup and Python’s requests library; currently supports Indeed.com</li>
+            </ul>
+            <span>
+                <p class="language-tags">Python</p>
+                <p class="language-tags">WordPress</p>
+                <p class="language-tags">Figma</p>
+            </span>
+        </div>
+
+        <div class="project-block" id="voiceassistant-project">
+            <span class="project-title">
+                <a class="project-link" href="https://github.com/kmawhinney/nwHacks2022" target="_blank">Financial Voice Assistant</a>
+            </span>
+            <p class="project-date">January 2022</p>
+            <ul class="project-description">
+                <li>Used Python’s native SpeechRecognition library and Yahoo Finance’s API to allow users to ask for information on various investments and financial instruments, including a 52-week stock graph</li>
+                <li>Created in a 24-hour span as a hackathon submission for nwHacks 2022</li>
+            </ul>
+            <span>
+                <p class="language-tags">Python</p>
+                <p class="language-tags">Rest API</p>
+                <p class="language-tags">Git</p>
+            </span>
+        </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+        </footer>
+    </body>
+</html>
