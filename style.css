@@ -18,25 +18,75 @@ header {
     width: 375px;
 }
 
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0px 40px 0px 40px;
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
     font-size: 25px;
     font-weight: bold;
-}
-
-.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 40px;
     text-decoration: none;
-    color: black;
-}
-
-.nav-links li a:hover {
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 40px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
     color: rgb(28, 83, 156);
-}
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(241, 241, 241);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /* About */
 #about-title {
@@ -123,6 +173,15 @@ header {
     font-weight: normal;
 }
 
+.subsection-title {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
 .section-subtitle {
     text-align: left;
 }
@@ -142,6 +201,23 @@ header {
     margin-right: auto;
 }
 
+.subsection-experience {
+    transition: all 0.35s ease;
+    border-radius: 5px;
+}
+
+.subsection-experience:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#personal-experience {
+    margin-top: 45px;
+}
+
+#comp-experience {
+    margin-top: 45px;
+}
+
 .experience-block {
     padding: 0px 0px 0px 10px;
     margin-bottom: 30px;
@@ -149,12 +225,9 @@ header {
     border-width: 4px;
 }
 
+/* Professional Experience */
 #bdo-experience {
     border-color: #C00000;
-}
-
-#jdc-experience {
-    border-color: #00428A;
 }
 
 #ilios-experience {
@@ -163,6 +236,36 @@ header {
 
 #tutoring-experience {
     border-color: #2B8D2B;
+}
+
+/* Personal Experience */
+#coding-challenges-experience {
+    border-color: rgb(248,159,27);
+}
+
+#jdc-experience {
+    border-color: #00428A;
+}
+
+/* Competitions & Events */
+#nscc2021-experience {
+    border-color: rgb(3,38,63);
+}
+
+#rpmc2021-experience {
+    border-color: rgb(26, 74, 197);
+}
+
+#imprint2021-experience {
+    border-color: rgb(155,49,45);
+}
+
+#nwhacks2022-experience {
+    border-color: rgb(64,120,142);
+}
+
+#productsprint2022-experience {
+    border-color: rgb(165,52,84);
 }
 
 .experience-title {
