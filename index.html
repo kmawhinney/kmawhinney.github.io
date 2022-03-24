@@ -13,13 +13,19 @@
         <!-- Navbar -->
         <header>
             <img class="logo" src="images/Personal Profile Logo.png" alt="logo">
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
+            <div class="navbar">
+                <a href="#projects">Projects</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Experience
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#professional-experience">Professional</a>
+                    <a href="#personal-experience">Personal</a>
+                    <a href="#comp-experience">Competitions & Events</a>
+                  </div>
+                </div>
+              </div>
         </header>
 
         <!-- About -->
@@ -49,57 +55,6 @@
         </section>
 
         <hr class="section-break">
-
-        <!-- Experience -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-
-        <div class="experience-block" id="bdo-experience">
-            <span class="experience-title">
-                <a class="experience-link" href="https://www.bdo.ca/en-ca/home/" target="_blank">BDO Canada</a> ∙ Management Consulting Analyst
-            </span>
-            <p class="experience-date">August 2021 - December 2021</p>
-            <ul class="experience-description">
-                <li>Worked with four unique clients to bring their products from innovation to the market as part of the go-to-market strategy team</li>
-                <li>Generated $5,000 in revenue for BDO Canada by delivering market research, building presentations, and creating solutions for product development projects</li>
-            </ul>
-        </div>
-
-        <div class="experience-block" id="jdc-experience">
-            <span class="experience-title">
-                <a class="experience-link" href="https://www.sauderjdcwest.com/" target="_blank">Sauder JDC West</a> ∙ Summer Development Team
-            </span>
-            <p class="experience-date">May 2021 - July 2021</p>
-            <ul class="experience-description">
-                <li>Developed eight report-style pitch decks to present analysis and solutions to weekly business cases from Harvard, Stanford, and Ivey</li>
-                <li>Professional case analysis and presentation growth through weekly coaching sessions</li>
-            </ul>
-        </div>
-
-        <div class="experience-block" id="ilios-experience">
-            <span class="experience-title">
-                <a class="experience-link" href="https://www.iliosinvestments.ca/" target="_blank">Ilios Investment Foundation</a> ∙ Junior Analyst & First Year Representative
-            </span>
-            <p class="experience-date">January 2021 - May 2021</p>
-            <ul class="experience-description">
-                <li>Created a stock pitch and contributed to equity reports through industry analysis, financial assessment, and DCF valuations</li>
-                <li>Increased LinkedIn engagement by 125% by marketing Olympus Capital’s events to other students through LinkedIn, Instagram, and Facebook posts</li>
-            </ul>
-        </div>
-
-        <div class="experience-block" id="tutoring-experience">
-            <span class="experience-title">
-                <a class="experience-link" href="http://peertutoring.ca/" target="_blank">Peer Tutoring</a> ∙ Founder
-            </span>
-            <p class="experience-date">January 2019 - September 2020</p>
-            <ul class="experience-description">
-                <li>Helped students increase their grades by over 20% through one-on-one tutoring, tailored video tutorials, and self-made assignments</li>
-                <li>Expanded clientele by 50% by building peertutoring.ca and learning how to optimize the SEO to increase website traffic</li>
-            </ul>
-        </div>
-
-
-        </section>
 
         <!-- Projects -->
         <section id="projects">
@@ -151,6 +106,129 @@
                 <p class="language-tags">Git</p>
             </span>
         </div>
+
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            
+            <!-- Professional Experience -->
+            <section class="subsection-experience" id="professional-experience">
+                <h3 class="subsection-title">Professional</h3>
+
+            <div class="experience-block" id="bdo-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.bdo.ca/en-ca/home/" target="_blank">BDO Canada</a> ∙ Management Consulting Analyst
+                </span>
+                <p class="experience-date">August 2021 - December 2021 ∙ Vancouver, BC</p>
+                <ul class="experience-description">
+                    <li>Worked with four unique businesses to bring their products from innovation to the market as part of the go-to-market strategy team</li>
+                    <li>Generated over $5,000 in revenue for BDO Canada by using problem-solving skills and market analysis to deliver solutions for product development projects</li>
+                </ul>
+            </div>
+
+            <div class="experience-block" id="ilios-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.iliosinvestments.ca/" target="_blank">Ilios Investment Foundation</a> ∙ Junior Analyst & First Year Representative
+                </span>
+                <p class="experience-date">January 2021 - May 2021</p>
+                <ul class="experience-description">
+                    <li>Created a stock pitch and contributed to equity reports through industry analysis, financial assessment, and DCF valuations</li>
+                    <li>Increased LinkedIn engagement by 125% by marketing Olympus Capital’s events to other students through LinkedIn, Instagram, and Facebook posts</li>
+                </ul>
+            </div>
+
+            <div class="experience-block" id="tutoring-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="http://peertutoring.ca/" target="_blank">Peer Tutoring</a> ∙ Founder
+                </span>
+                <p class="experience-date">January 2019 - September 2020</p>
+                <ul class="experience-description">
+                    <li>Helped students increase their grades by over 20% through one-on-one tutoring, tailored video tutorials, and self-made assignments</li>
+                    <li>Expanded clientele by 50% by building peertutoring.ca and learning how to optimize the SEO to increase website traffic</li>
+                </ul>
+            </div>
+            </section>
+
+            <!-- Personal Experience -->
+            <section class="subsection-experience" id="personal-experience">
+                <h3 class="subsection-title">Personal</h3>
+
+            <div class="experience-block" id="coding-challenges-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://github.com/kmawhinney/leetcode" target="_blank">Programming Challenges</a>
+                </span>
+                <p class="experience-date">March 2022 - Present</p>
+                <ul class="experience-description">
+                    <li>Developing data structure, algorithm, design pattern, and time & space complexity skills through programming challenges</li>
+                    <li>Solving programming challenges through various platforms, primarily <a href="https://leetcode.com/kealanm/">LeetCode</a> and <a href="https://www.codewars.com/users/kmawhinney">CodeWars</a></li>
+                </ul>
+            </div>
+
+            <div class="experience-block" id="jdc-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.sauderjdcwest.com/" target="_blank">Sauder JDC West</a> ∙ Case Development Team
+                </span>
+                <p class="experience-date">May 2021 - July 2021</p>
+                <ul class="experience-description">
+                    <li>Presented data-driven and systematically-designed solutions to business cases from Harvard, Stanford, and Ivey</li>
+                    <li>Improved critical thinking, case analysis and presentation skills through weekly coaching sessions</li>
+                </ul>
+            </div>
+
+            </section>
+
+            <!-- Competitions & Events Experience -->
+            <section class="subsection-experience" id="comp-experience">
+                <h3 class="subsection-title">Competitions & Events</h3>
+
+            <div class="experience-block" id="productsprint2022-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.ubcpm.club/productsprint/" target="_blank">Product Sprint 2022</a>
+                </span>
+                <p class="experience-date">January 2022 - February 2022</p>
+                <ul class="experience-description">
+                </ul>
+            </div>
+
+            <div class="experience-block" id="nwhacks2022-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.nwhacks.io/" target="_blank">nwHacks 2022</a>
+                </span>
+                <p class="experience-date">January 2022</p>
+                <ul class="experience-description">
+                </ul>
+            </div>
+
+            <div class="experience-block" id="imprint2021-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.ubcimprint.com/copy-of-the-conference" target="_blank">IMPACT Case Competition 2021</a> ∙ 1st Place
+                </span>
+                <p class="experience-date">February 2021 - March 2021</p>
+                <ul class="experience-description">
+                </ul>
+            </div>
+
+            <div class="experience-block" id="rpmc2021-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="http://financelab.rotman.utoronto.ca/news.asp?name=2020-10-05_RPMC%202021#:~:text=RPMC%20aims%20to%20promote%20a,by%20the%20Rotman%20Finance%20Lab." target="_blank">Rotman Portfolio Management Competition 2021</a> ∙ 2nd Place
+                </span>
+                <p class="experience-date">November 2020 - March 2021</p>
+                <ul class="experience-description">
+                </ul>
+            </div>
+
+            <div class="experience-block" id="nscc2021-experience">
+                <span class="experience-title">
+                    <a class="experience-link" href="https://www.thenscc.com/" target="_blank">National Strategy Consulting Competition 2021</a> ∙ Finalist
+                </span>
+                <p class="experience-date">January 2021</p>
+                <ul class="experience-description">
+                </ul>
+            </div>
+
+            </section>
 
         </section>
 
