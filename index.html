@@ -1,239 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kealan Mawhinney Portfolio</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://kit.fontawesome.com/0de5f50608.js" crossorigin="anonymous"></script>
-    </head>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0de5f50608.js" crossorigin="anonymous"></script>
 
-    <body>
-        <!-- Navbar -->
-        <header>
-            <img class="logo" src="images/Personal Profile Logo.png" alt="logo">
-            <div class="navbar">
-                <a href="#projects">Projects</a>
-                <div class="dropdown">
-                  <button class="dropbtn">Experience
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#professional-experience">Professional</a>
-                    <a href="#personal-experience">Personal</a>
-                    <a href="#comp-experience">Competitions & Events</a>
+    <title>Kealan Mawhinney</title>
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/km logo.png" alt="" width="34" height="30" class="d-inline-block align-text-top">
+            Kealan Mawhinney
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+
+          </div>
+        </div>
+      </nav>
+
+    <div id="about" class="container text-center mt-5">
+        <h1>Hi, I'm Kealan!</h1>
+        <p id="lead-text" class="text-muted">
+            I'm a computer science and business student at the University of British Columbia.
+        </p>
+        <a id="linkedin-button" class="btn btn-primary mx-2" href="https://www.linkedin.com/in/kealanmawhinney/" target="_blank" role="button">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a id="github-button" class="btn btn-primary mx-2" href="https://github.com/kmawhinney" target="_blank" role="button">
+            <i class="fab fa-github"></i>
+        </a>
+        <a id="email-button" class="btn btn-primary mx-2" href="mailto:kealan.mawhinney@gmail.com" role="button">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <div class="container text-center mt-5 horizontal-line" style="width:700px; margin:0 auto;">
+     </div>
+
+    <!-- Projects -->
+    <div id="projects" class="container mt-5">
+        <h2>Projects</h2>
+
+        <!-- Project Network Web App -->
+        <div class="card mb-4" style="width:75%">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/BuiltByMe Home.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Home Page</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/BuiltByMe Post.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Post Page</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/BuiltByMe Profile.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Profile Page</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Project Network Web App</h5>
+                <h6>
+                  <span class="py-badge badge rounded-pill">Python (Flask)</span>
+                  <span class="sql-badge badge rounded-pill">SQL</span>
+                  <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                  <span class="git-badge badge rounded-pill">Git</span>
+                </h6>
+              <p class="card-text">
+                  BuiltByMe is a Flask web application that allows users to share projects they have built and receive feedback from the community.
+                  <ul>
+                      <li>
+                        Programmed back-end with Python, using object-oriented design to create data models, routes, and forms
+                      </li>
+                      <li>
+                        Created secure authentication system using password hashing to protect user information
+                      </li>
+                      <li>
+                        Designed SQL database with CRUD operations using SQLAlchemy for object-relational mapping
+                      </li>
+                      <li>
+                        Leveraged Jinja2 as templating engine and Bootstrap for responsive front-end development
+                      </li>
+                  </ul>
+              </p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <!-- Personal Portfolio -->
+            <div class="col">
+                <div class="card">
+                  <img src="images/Personal Portfolio Thumbnail.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Personal Portfolio</h5>
+                      <h6>
+                        <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                        <span class="git-badge badge rounded-pill">Git</span>
+                      </h6>
+                    <p class="card-text">
+                        My personal portfolio is a custom-built website that showcases my experience, projects, and other interesting things I've done.
+                        <ul>
+                            <li>
+                              Developed mobile-friendly, responsive layout using Bootstrap's front-end toolkit to complement my custom HTML and CSS
+                            </li>
+                        </ul>
+                    </p>
+                    <a href="#" class="btn btn-primary">View Project</a>
                   </div>
                 </div>
               </div>
-        </header>
 
-        <!-- About -->
-        <section id="about">
-            <h1 id="about-title">Hi, I'm Kealan! Nice to meet you!</h1>
-            <p id="about-subtitle">
-                I'm a computer science and business student at the University of British Columbia.
-                <br>
-                Read more about my experience and projects below, and feel free to contact me with any inqueries!                
-            </p>
-            
-        <!-- Social Links -->
-        <div class="social-links">
-            <a class="social-button" id="resume-button" href="https://drive.google.com/file/d/14ZkpRSMYSuqyY6KCtDJVxDw1pmgyzD3q/view?usp=sharing" target="_blank">
-                <i class="fas fa-file-alt"></i> Resume
-            </a>
-            <a class="social-button" id="linkedin-button" href="https://www.linkedin.com/in/kealanmawhinney/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a class="social-button" id="github-button" href="https://github.com/kmawhinney" target="_blank">
-                <i class="fab fa-github"></i></ion-icon> GitHub
-            </a>
-            <a class="social-button" id="email-button" href="mailto:kealan.mawhinney@gmail.com" target="_blank">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-        </div>
-        </section>
+            <!-- Reddit Keyword Popularity Scraper -->
+            <div class="col">
+                <div class="card">
+                  <img src="images/Python-Reddit@2x.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Reddit Keyword Popularity Scraper</h5>
+                      <h6>
+                        <span class="py-badge badge rounded-pill">Python</span>
+                        <span class="restapi-badge badge rounded-pill">Rest API</span>
+                        <span class="git-badge badge rounded-pill">Git</span>
+                      </h6>
+                    <p class="card-text">
+                        The reddit keyword popularity scraper is a Python script that allows users to identify what the most
+                        popular keywords are on any given subreddit, or find how frequently a specific keyword is mentioned.
+                        <ul>
+                            <li>
+                              Designed data-scraping functionality through use of Reddit's API, PRAW (Python Reddit API Wrapper)
+                            </li>
+                            <li>
+                              Expanded query and rate limits for increased data set size using Pushshift's RESTful API, allowing for removal of 1,000 query upper-bound
+                            </li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/kmawhinney/reddit-keyword-scraper" target="_blank" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
 
-        <hr class="section-break">
+            <!-- Financial Voice Assistant -->
+            <div class="col">
+                <div class="card">
+                  <img src="images/Financial Voice Assistant.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Financial Voice Assistant</h5>
+                      <h6>
+                        <span class="py-badge badge rounded-pill">Python</span>
+                        <span class="restapi-badge badge rounded-pill">Rest API</span>
+                        <span class="git-badge badge rounded-pill">Git</span>
+                      </h6>
+                    <p class="card-text">
+                        Maverick is a financial voice assistant that allows users to use voice-commands to ask for information
+                        on various investments and financial instruments, and returns any relevant news, statistics, and graphs.
+                        <ul>
+                            <li>
+                              Developed voice-recognition functionality by adjusting Python's native SpeechRecognition library
+                            </li>
+                            <li>
+                              Used Yahoo Finance's API to fetch real-time information on investments
+                            </li>
+                            <li>
+                              Created in 24-hour span as a hackathon submission for nwHacks 2022
+                            </li>
+                        </ul>
+                    </p>
+                    <a href="https://github.com/kmawhinney/nwHacks2022" target="_blank" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
+          </div>
+    </div>
 
-        <div class="project-block" id="reddit-project">
-            <span class="project-title">
-                <a class="project-link" href="https://github.com/kmawhinney/reddit-keyword-scraper" target="_blank">Reddit Keyword Popularity Scraper</a>
-            </span>
-            <p class="project-date">February 2022 - Present</p>
-            <ul class="project-description">
-                <li>Developed a Python script that returns the most popular keywords and count of user-inputted keywords in submissions for any subreddit; working on adding comment functionality and an automated bot</li>
-                <li>Designed using the Reddit API to scrape data from reddit.com, and the Pushshift API to expand query and rate limits for increased data set size</li>
-            </ul>
-            <span>
-                <p class="language-tags">Python</p>
-                <p class="language-tags">Rest API</p>
-            </span>
-        </div>
 
-        <div class="project-block" id="careerme-project">
-            <span class="project-title">
-                <a class="project-link" href="http://careerme.ca/" target="_blank">CareerMe Website</a>
-            </span>
-            <p class="project-date">January 2022 - Present</p>
-            <ul class="project-description">
-                <li>Created web platform called CareerMe, which helps students understand every career available to them; MVP being developed through WordPress, full-release will be built with JavaScript (React) and Python (Flask)</li>
-                <li>Building entry-level job scraper using Beautiful Soup and Python’s requests library; currently supports Indeed.com</li>
-            </ul>
-            <span>
-                <p class="language-tags">Python</p>
-                <p class="language-tags">WordPress</p>
-                <p class="language-tags">Figma</p>
-            </span>
-        </div>
+    <div class="container text-center mt-5 horizontal-line" style="width:700px; margin:0 auto;">
+    </div>
 
-        <div class="project-block" id="voiceassistant-project">
-            <span class="project-title">
-                <a class="project-link" href="https://github.com/kmawhinney/nwHacks2022" target="_blank">Financial Voice Assistant</a>
-            </span>
-            <p class="project-date">January 2022</p>
-            <ul class="project-description">
-                <li>Used Python’s native SpeechRecognition library and Yahoo Finance’s API to allow users to ask for information on various investments and financial instruments, including a 52-week stock graph</li>
-                <li>Created in a 24-hour span as a hackathon submission for nwHacks 2022</li>
-            </ul>
-            <span>
-                <p class="language-tags">Python</p>
-                <p class="language-tags">Rest API</p>
-                <p class="language-tags">Git</p>
-            </span>
-        </div>
+    <!-- Experience -->
 
-        </section>
-
-        <!-- Experience -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            
-            <!-- Professional Experience -->
-            <section class="subsection-experience" id="professional-experience">
-                <h3 class="subsection-title">Professional</h3>
-
-            <div class="experience-block" id="bdo-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.bdo.ca/en-ca/home/" target="_blank">BDO Canada</a> ∙ Management Consulting Analyst
-                </span>
-                <p class="experience-date">August 2021 - December 2021 ∙ Vancouver, BC</p>
-                <ul class="experience-description">
-                    <li>Worked with four unique businesses to bring their products from innovation to the market as part of the go-to-market strategy team</li>
-                    <li>Generated over $5,000 in revenue for BDO Canada by using problem-solving skills and market analysis to deliver solutions for product development projects</li>
-                </ul>
-            </div>
-
-            <div class="experience-block" id="ilios-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.iliosinvestments.ca/" target="_blank">Ilios Investment Foundation</a> ∙ Junior Analyst & First Year Representative
-                </span>
-                <p class="experience-date">January 2021 - May 2021</p>
-                <ul class="experience-description">
-                    <li>Created a stock pitch and contributed to equity reports through industry analysis, financial assessment, and DCF valuations</li>
-                    <li>Increased LinkedIn engagement by 125% by marketing Olympus Capital’s events to other students through LinkedIn, Instagram, and Facebook posts</li>
-                </ul>
-            </div>
-
-            <div class="experience-block" id="tutoring-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="http://peertutoring.ca/" target="_blank">Peer Tutoring</a> ∙ Founder
-                </span>
-                <p class="experience-date">January 2019 - September 2020</p>
-                <ul class="experience-description">
-                    <li>Helped students increase their grades by over 20% through one-on-one tutoring, tailored video tutorials, and self-made assignments</li>
-                    <li>Expanded clientele by 50% by building peertutoring.ca and learning how to optimize the SEO to increase website traffic</li>
-                </ul>
-            </div>
-            </section>
-
-            <!-- Personal Experience -->
-            <section class="subsection-experience" id="personal-experience">
-                <h3 class="subsection-title">Personal</h3>
-
-            <div class="experience-block" id="coding-challenges-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://github.com/kmawhinney/leetcode" target="_blank">Programming Challenges</a>
-                </span>
-                <p class="experience-date">March 2022 - Present</p>
-                <ul class="experience-description">
-                    <li>Developing data structure, algorithm, design pattern, and time & space complexity skills through programming challenges</li>
-                    <li>Solving programming challenges through various platforms, primarily <a href="https://leetcode.com/kealanm/">LeetCode</a> and <a href="https://www.codewars.com/users/kmawhinney">CodeWars</a></li>
-                </ul>
-            </div>
-
-            <div class="experience-block" id="jdc-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.sauderjdcwest.com/" target="_blank">Sauder JDC West</a> ∙ Case Development Team
-                </span>
-                <p class="experience-date">May 2021 - July 2021</p>
-                <ul class="experience-description">
-                    <li>Presented data-driven and systematically-designed solutions to business cases from Harvard, Stanford, and Ivey</li>
-                    <li>Improved critical thinking, case analysis and presentation skills through weekly coaching sessions</li>
-                </ul>
-            </div>
-
-            </section>
-
-            <!-- Competitions & Events Experience -->
-            <section class="subsection-experience" id="comp-experience">
-                <h3 class="subsection-title">Competitions & Events</h3>
-
-            <div class="experience-block" id="productsprint2022-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.ubcpm.club/productsprint/" target="_blank">Product Sprint 2022</a>
-                </span>
-                <p class="experience-date">January 2022 - February 2022</p>
-                <ul class="experience-description">
-                </ul>
-            </div>
-
-            <div class="experience-block" id="nwhacks2022-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.nwhacks.io/" target="_blank">nwHacks 2022</a>
-                </span>
-                <p class="experience-date">January 2022</p>
-                <ul class="experience-description">
-                </ul>
-            </div>
-
-            <div class="experience-block" id="imprint2021-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.ubcimprint.com/copy-of-the-conference" target="_blank">IMPACT Case Competition 2021</a> ∙ 1st Place
-                </span>
-                <p class="experience-date">February 2021 - March 2021</p>
-                <ul class="experience-description">
-                </ul>
-            </div>
-
-            <div class="experience-block" id="rpmc2021-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="http://financelab.rotman.utoronto.ca/news.asp?name=2020-10-05_RPMC%202021#:~:text=RPMC%20aims%20to%20promote%20a,by%20the%20Rotman%20Finance%20Lab." target="_blank">Rotman Portfolio Management Competition 2021</a> ∙ 2nd Place
-                </span>
-                <p class="experience-date">November 2020 - March 2021</p>
-                <ul class="experience-description">
-                </ul>
-            </div>
-
-            <div class="experience-block" id="nscc2021-experience">
-                <span class="experience-title">
-                    <a class="experience-link" href="https://www.thenscc.com/" target="_blank">National Strategy Consulting Competition 2021</a> ∙ Finalist
-                </span>
-                <p class="experience-date">January 2021</p>
-                <ul class="experience-description">
-                </ul>
-            </div>
-
-            </section>
-
-        </section>
-
-        <!-- Footer -->
-        <footer>
-        </footer>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
