@@ -1,362 +1,75 @@
-* {
-    font-family: Calibri, sans-serif;
-
-} 
-
-/* Header */
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 5%;
-    background: #ececec75;
-    margin: -10px -10px;
-}
-
-.logo {
-    margin-right: auto;
-    width: 375px;
-}
-
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 40px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 25px;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    padding: 14px 40px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    color: rgb(28, 83, 156);
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: rgb(241, 241, 241);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
   }
 
-/* About */
-#about-title {
-    text-align: center;
-    font-size: 60px;
-    font-weight: normal;
-    padding-top: 15px;
-}
-
-#about-subtitle {
-    text-align: center;
-    font-size: 25px;
-    margin-top: -20px;
+#lead-text {
+    font-size: 1.25rem;
 }
 
 /* Social Links */
-.social-links {
-    text-align: center;
-    padding: 15px 0px;
-}
-
-#resume-button {
-    padding: 10px 45px;
-    background-color: #203864;
-    border-radius: 10px;
-    margin: 0px 25px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
 #linkedin-button {
-    padding: 10px 30px;
-    background-color: #0e76a8;
-    border-radius: 10px;
-    margin: 0px 25px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
-#github-button {
-    padding: 10px 40px;
-    background-color: black;
-    border-radius: 10px;
-    margin: 0px 25px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
-#email-button {
-    padding: 10px 45px;
-    background-color: #516e81;
-    border-radius: 10px;
-    margin: 0px 25px;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-}
-
-#resume-button:hover {
-    background-color:#182542;
+    background-color: white;
+    border-color: #0e76a8;
+    border-width: 2px;
+    color: #0e76a8;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 #linkedin-button:hover {
-    background-color:#0d5679;
+    background-color: #0e76a8;
+    color: white;
+}
+
+#github-button {
+    background-color: white;
+    border-color: #000000;
+    border-width: 2px;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 #github-button:hover {
-    background-color:#1b1b1b;
+    background-color: #000000;
+    color: white;
+}
+
+#email-button {
+    background-color: white;
+    border-color: #516E81;
+    border-width: 2px;
+    color: #516E81;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 #email-button:hover {
-    background-color:#486172;
+    background-color: #516E81;
+    color: white;
 }
 
-/* Sections */
-.section-title {
-    text-align: left;
-    font-size: 50px;
-    margin-top: 70px;
-    margin-bottom: 10px;
-    font-weight: normal;
+.horizontal-line {
+    border-bottom: 1.5px solid #c9c7c7;
 }
 
-.subsection-title {
-    text-align: left;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-decoration: underline;
+.py-badge {
+    background-color: #3476AA;
 }
 
-.section-subtitle {
-    text-align: left;
+.git-badge {
+    background-color: #888888;
 }
 
-.section-break {
-    width: 800px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border: 0;
-    border-top: 2px solid rgba(0,0,0,0.2);
+.restapi-badge {
+    background-color: #888888;
 }
 
-/* Experience */
-#experience {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.htmlcss-badge {
+    background-color: rgb(86,61,124);
 }
 
-.subsection-experience {
-    transition: all 0.35s ease;
-    border-radius: 5px;
-}
-
-.subsection-experience:hover {
-    background-color: rgb(241, 241, 241);
-}
-
-#personal-experience {
-    margin-top: 45px;
-}
-
-#comp-experience {
-    margin-top: 45px;
-}
-
-.experience-block {
-    padding: 0px 0px 0px 10px;
-    margin-bottom: 30px;
-    border-left: solid;
-    border-width: 4px;
-}
-
-/* Professional Experience */
-#bdo-experience {
-    border-color: #C00000;
-}
-
-#ilios-experience {
-    border-color: #00B0F0;
-}
-
-#tutoring-experience {
-    border-color: #2B8D2B;
-}
-
-/* Personal Experience */
-#coding-challenges-experience {
-    border-color: rgb(248,159,27);
-}
-
-#jdc-experience {
-    border-color: #00428A;
-}
-
-/* Competitions & Events */
-#nscc2021-experience {
-    border-color: rgb(3,38,63);
-}
-
-#rpmc2021-experience {
-    border-color: rgb(26, 74, 197);
-}
-
-#imprint2021-experience {
-    border-color: rgb(155,49,45);
-}
-
-#nwhacks2022-experience {
-    border-color: rgb(64,120,142);
-}
-
-#productsprint2022-experience {
-    border-color: rgb(165,52,84);
-}
-
-.experience-title {
-    font-weight: normal;
-    font-size: 25px;
-    margin: 0;
-}
-
-.experience-link {
-    font-weight: bold;
-    text-decoration: none;
-    color:rgb(41, 120, 223);
-}
-
-.experience-link:hover {
-    text-decoration: underline;
-    color:rgb(28, 83, 156);
-}
-
-.experience-date {
-    font-style: italic;
-    font-size: 20px;
-    margin: 0;
-}
-
-.experience-description {
-    font-size: 20px;
-    margin: 0;
-}
-
-/* Projects */
-#projects {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-block {
-    padding: 0px 0px 0px 10px;
-    margin-bottom: 30px;
-    border-left: solid;
-    border-width: 4px;
-}
-
-#reddit-project {
-    border-color: #FF4500;
-}
-
-#careerme-project {
-    border-color: #5ca3b4;
-}
-
-#voiceassistant-project {
-    border-color: #2d792d;
-}
-
-.project-title {
-    font-weight: normal;
-    font-size: 25px;
-    margin: 0;
-}
-
-.project-link {
-    font-weight: bold;
-    text-decoration: none;
-    color:rgb(41, 120, 223);
-}
-
-.project-link:hover {
-    text-decoration: underline;
-    color:rgb(28, 83, 156);
-}
-
-.project-date {
-    font-style: italic;
-    font-size: 20px;
-    margin: 0;
-}
-
-.project-description {
-    font-size: 20px;
-    margin: 0;
-}
-
-.language-tags {
-    display: inline-block;
-    font-family: Consolas, monospace;
-    padding: 0px 10px;
-    margin: 5px 5px 0px 0px;
-    font-size: 18px;
-    border-radius: 5px;
-    background-color: rgb(221, 221, 221);
-    font-weight: bold;
+.sql-badge {
+    background-color: #d46245;
 }
