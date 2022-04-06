@@ -73,3 +73,13 @@
 .sql-badge {
     background-color: #d46245;
 }
+
+.featured-project {
+    width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .featured-project {
+        width: 100%;
+    }
+}
