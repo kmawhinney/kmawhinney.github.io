@@ -1,3 +1,7 @@
+html body {
+    background-color: rgb(248, 248, 248);
+}
+
 .navbar-nav > li{
     padding-left:10px;
     padding-right:10px;
@@ -76,6 +80,10 @@
 
 .featured-project {
     width: 75%;
+}
+
+#card-border {
+    border-color: rgb(207, 207, 207);
 }
 
 @media screen and (max-width: 768px) {
