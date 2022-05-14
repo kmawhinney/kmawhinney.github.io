@@ -12,6 +12,20 @@ html body {
 }
 
 /* Social Links */
+#youtube-button {
+    background-color: white;
+    border-color: #FF0100;
+    border-width: 2px;
+    color: #FF0100;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#youtube-button:hover {
+    background-color: #FF0100;
+    color: white;
+}
+
 #linkedin-button {
     background-color: white;
     border-color: #0e76a8;
