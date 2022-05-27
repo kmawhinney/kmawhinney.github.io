@@ -100,8 +100,17 @@ html body {
     border-color: rgb(207, 207, 207);
 }
 
+.experience-text {
+    margin-left: 73px;
+    margin-top: -20px;
+}
+
+
 @media screen and (max-width: 768px) {
     .featured-project {
         width: 100%;
+    }
+    .experience-text {
+        margin-left: 0px;
     }
 }
