@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0de5f50608.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
 
     <title>Kealan Mawhinney</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -54,6 +56,10 @@
         </p>
 
 
+        <a id="email-button" class="btn btn-primary mx-2" href="mailto:kealan.mawhinney@gmail.com" role="button">
+          <i class="fas fa-envelope"></i>
+        </a>
+
         <a id="linkedin-button" class="btn btn-primary mx-2" href="https://www.linkedin.com/in/kealanmawhinney/" target="_blank" role="button">
             <i class="fab fa-linkedin-in"></i>
         </a>
@@ -62,19 +68,16 @@
             <i class="fab fa-github"></i>
         </a>
 
-        <a id="email-button" class="btn btn-primary mx-2" href="mailto:kealan.mawhinney@gmail.com" role="button">
-            <i class="fas fa-envelope"></i>
+        <a id="leetcode-button" class="btn btn-primary mx-2" href="https://leetcode.com/kealanm/" target="_blank" role="button">
+          <span class="iconify" style="font-size: 32px; padding-bottom: 3px; padding-right: 11px;" data-icon="simple-icons:leetcode"></span>
         </a>
-
-       <!--
 
         <a id="youtube-button" class="btn btn-primary mx-2" href="https://www.youtube.com/channel/UChqNJc6T93_uRl2nvmoBm4Q" target="_blank" role="button">
           <i class="fab fa-youtube"></i>
         </a>
-
-        -->
       
     </div>
+
 
 
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
@@ -82,162 +85,237 @@
 
     <!-- Projects -->
     <div id="projects" class="container mt-5">
-        <h2>Projects</h2>
+          <h2>Projects</h2>
 
-        <!-- Project Network Web App -->
-        <div id="card-border" class="featured-project card mb-4">
-
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!-- Codebagel YouTube -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div class="link-img-container">
+                  <a href="https://www.youtube.com/c/codebagel" target="_blank">
+                  <img src="images/Codebagel Portfolio Thumbnail.png" class="img-fluid rounded-start link-img" alt="...">
+                  </a>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/BuiltByMe Home.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Home Page</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="images/BuiltByMe Post.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Post Page</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/BuiltByMe Profile.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Profile Page</h5>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-
-            <div class="card-body">
-              <h5 class="card-title">BuiltByMe - Project Network Web App</h5>
-                <h6>
-                  <span class="py-badge badge rounded-pill">Python (Flask)</span>
-                  <span class="sql-badge badge rounded-pill">SQL</span>
-                  <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
-                  <span class="git-badge badge rounded-pill">Git</span>
-                </h6>
-              <p class="card-text">
-                  BuiltByMe is a Flask web application that allows users to share projects they have built and receive feedback from the community.
-                  <ul>
-                      <li>
-                        Programmed back-end with Python, using object-oriented design to create data models, routes, and forms
-                      </li>
-                      <li>
-                        Created secure authentication system using password hashing to protect user information
-                      </li>
-                      <li>
-                        Designed SQL database with CRUD operations using SQLAlchemy for object-relational mapping
-                      </li>
-                      <li>
-                        Leveraged Jinja2 as templating engine and Bootstrap for responsive front-end development
-                      </li>
-                  </ul>
-              </p>
-              <a href="#" class="btn btn-primary">View Project</a>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Animated Coding YouTube Channel</h5>
+                  <h6>
+                    <span class="youtube-badge badge rounded-pill">YouTube</span>
+                  </h6>
+                  <p class="card-text">
+                    Codebagel is a visualization-based coding YouTube channel, designed to be easily understood. Content focuses on skills
+                    required to build a career in software engineering, including data structures & algorithms, system design, interviewing, etc.
+                    <ul style="font-size: 14px;">
+                        <li>
+                          Achieved 200,000 unique views and over 2,500 subscribers over 3 month time period
+                        </li>
+                        <li>
+                          Improved user click-through rate by 100% by conducting A/B testing of video design
+                        </li>
+                        <li>
+                          Increased audience retention by 35% by analyzing KPIs to develop engagement strategies
+                        </li>
+                    </ul>
+                </p>
+                </div>
+              </div>
             </div>
           </div>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
 
-            <!-- Personal Portfolio -->
-            <div class="col">
-                <div id="card-border" class="card">
-                  <img src="images/Portfolio Metadata Image.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Personal Portfolio</h5>
-                      <h6>
-                        <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
-                        <span class="git-badge badge rounded-pill">Git</span>
-                      </h6>
-                    <p class="card-text">
-                        My personal portfolio is a custom-built website that showcases my experience, projects, and other interesting things I've done.
-                        <ul>
-                            <li>
-                              Developed mobile-friendly, responsive layout using Bootstrap's front-end toolkit to complement my custom HTML and CSS
-                            </li>
-                        </ul>
-                    </p>
-                    <a href="#" class="btn btn-primary">View Project</a>
+          <!-- BuiltByMe -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <div class="link-img-container">
+                        <a href="https://github.com/kmawhinney/BuiltByMe" target="_blank">
+                        <img src="images/BuiltByMe Home.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Home Page</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <div class="link-img-container">
+                        <a href="https://github.com/kmawhinney/BuiltByMe" target="_blank">
+                        <img src="images/BuiltByMe Post.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Post Page</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="link-img-container">
+                        <a href="https://github.com/kmawhinney/BuiltByMe" target="_blank">
+                        <img src="images/BuiltByMe Profile.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Profile Page</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">BuiltByMe - Project Network Web App</h5>
+                  <h6>
+                    <span class="py-badge badge rounded-pill">Python (Flask)</span>
+                    <span class="sql-badge badge rounded-pill">SQL</span>
+                    <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                    <span class="git-badge badge rounded-pill">Git</span>
+                  </h6>
+                  <p class="card-text">
+                    BuiltByMe is a Flask web application that allows users to share projects they have built and receive feedback from the community.
+                    <ul style="font-size: 14px;">
+                        <li>
+                          Programmed back-end with Python, using object-oriented design to create data models, routes, and forms
+                        </li>
+                        <li>
+                          Created secure authentication system using password hashing to protect user information
+                        </li>
+                        <li>
+                          Designed SQL database with CRUD operations using SQLAlchemy for object-relational mapping
+                        </li>
+                        <li>
+                          Leveraged Jinja2 as templating engine and Bootstrap for responsive front-end development
+                        </li>
+                    </ul>
+                </p>
                 </div>
               </div>
-
-            <!-- Reddit Keyword Popularity Scraper -->
-            <div class="col">
-                <div id="card-border" class="card">
-                  <img src="images/Python-Reddit@2x.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Reddit Keyword Popularity Scraper</h5>
-                      <h6>
-                        <span class="py-badge badge rounded-pill">Python</span>
-                        <span class="restapi-badge badge rounded-pill">Rest API</span>
-                        <span class="git-badge badge rounded-pill">Git</span>
-                      </h6>
-                    <p class="card-text">
-                        The reddit keyword popularity scraper is a Python script that allows users to identify what the most
-                        popular keywords are on any given subreddit, or find how frequently a specific keyword is mentioned.
-                        <ul>
-                            <li>
-                              Designed data-scraping functionality through use of Reddit's API, PRAW (Python Reddit API Wrapper)
-                            </li>
-                            <li>
-                              Expanded query and rate limits for increased data set size using Pushshift's RESTful API, allowing for removal of 1,000 query upper-bound
-                            </li>
-                        </ul>
-                    </p>
-                    <a href="https://github.com/kmawhinney/reddit-keyword-scraper" target="_blank" class="btn btn-primary">View Project</a>
-                  </div>
-                </div>
-              </div>
-
-            <!-- Financial Voice Assistant -->
-            <div class="col">
-                <div id="card-border" class="card">
-                  <img src="images/Financial Voice Assistant.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Financial Voice Assistant</h5>
-                      <h6>
-                        <span class="py-badge badge rounded-pill">Python</span>
-                        <span class="restapi-badge badge rounded-pill">Rest API</span>
-                        <span class="git-badge badge rounded-pill">Git</span>
-                      </h6>
-                    <p class="card-text">
-                        Maverick is a financial voice assistant that allows users to use voice-commands to ask for information
-                        on various investments and financial instruments, and returns any relevant news, statistics, and graphs.
-                        <ul>
-                            <li>
-                              Developed voice-recognition functionality by adjusting Python's native SpeechRecognition library
-                            </li>
-                            <li>
-                              Used Yahoo Finance's API to fetch real-time information on investments
-                            </li>
-                            <li>
-                              Created in 24-hour span as a hackathon submission for nwHacks 2022
-                            </li>
-                        </ul>
-                    </p>
-                    <a href="https://github.com/kmawhinney/nwHacks2022" target="_blank" class="btn btn-primary">View Project</a>
-                  </div>
-                </div>
-              </div>
-
+            </div>
           </div>
-    </div>
+
+
+          <!-- Personal Portfolio -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div class="link-img-container">
+                  <a href="https://kmawhinney.github.io/" target="_blank">
+                  <img src="images/Personal Portfolio Thumbnail.png" class="img-fluid rounded-start link-img" alt="...">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Personal Portfolio</h5>
+                  <h6>
+                    <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                    <span class="git-badge badge rounded-pill">Git</span>
+                  </h6>
+                  <p class="card-text">
+                    My personal portfolio is a custom-built website that showcases my experience, projects, and other interesting things I've done.
+                    <ul style="font-size: 14px;">
+                        <li>
+                          Developed mobile-friendly, responsive layout using Bootstrap's front-end toolkit to complement my custom HTML and CSS
+                        </li>
+                    </ul>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Reddit Popularity Keyword Scraper -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div class="link-img-container">
+                  <a href="https://github.com/kmawhinney/reddit-keyword-scraper" target="_blank">
+                  <img src="images/Python-Reddit@2x.png" class="img-fluid rounded-start link-img" alt="...">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Reddit Keyword Popularity Scraper</h5>
+                  <h6>
+                    <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                    <span class="git-badge badge rounded-pill">Git</span>
+                    <span class="git-badge badge rounded-pill">Rest API</span>
+                  </h6>
+                  <p class="card-text">
+                    The reddit keyword popularity scraper is a Python script that allows users to identify what the most popular keywords are on any given subreddit, or find how frequently a specific keyword is mentioned.
+                    <ul style="font-size: 14px;">
+                    <li>
+                      Designed data-scraping functionality through use of Reddit's API, PRAW (Python Reddit API Wrapper)
+                    </li>
+                    <li>
+                      Expanded query and rate limits for increased data set size using Pushshift's RESTful API, allowing for removal of 1,000 query upper-bound
+                    </li>
+                    </ul>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Financial Voice Assistant -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div class="link-img-container">
+                  <a href="https://github.com/kmawhinney/nwHacks2022" target="_blank">
+                  <img src="images/Financial Voice Assistant.jpg" class="img-fluid rounded-start link-img" alt="...">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Financial Voice Assistant</h5>
+                  <h6>
+                    <span class="htmlcss-badge badge rounded-pill">HTML/CSS (Bootstrap)</span>
+                    <span class="git-badge badge rounded-pill">Git</span>
+                    <span class="git-badge badge rounded-pill">Rest API</span>
+                  </h6>
+                  <p class="card-text">
+                    Maverick is a financial voice assistant that allows users to use voice-commands to ask for information
+                    on various investments and financial instruments, and returns any relevant news, statistics, and graphs.
+                    <ul style="font-size: 14px;">
+                      <li>
+                        Developed voice-recognition functionality by adjusting Python's native SpeechRecognition library
+                      </li>
+                      <li>
+                        Used Yahoo Finance's API to fetch real-time information on investments
+                      </li>
+                      <li>
+                        Created in 24-hour span as a hackathon submission for nwHacks 2022
+                      </li>
+                  </ul>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+      </div>
+
 
 
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
