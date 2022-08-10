@@ -12,13 +12,28 @@ html body {
 }
 
 /* Social Links */
+#leetcode-button {
+    background-color: white;
+    border-color: #fe8104;
+    border-width: 2px;
+    color: #fe8104;
+    border-radius: 50%;
+    width: 50px;
+}
+
+#leetcode-button:hover {
+    background-color: #fe8104;
+    color: white;
+}
+
 #youtube-button {
     background-color: white;
     border-color: #FF0100;
     border-width: 2px;
     color: #FF0100;
     border-radius: 50%;
-    font-size: 20px;
+    width: 50px;
+    font-size: 21px;
 }
 
 #youtube-button:hover {
@@ -33,6 +48,7 @@ html body {
     color: #0e76a8;
     border-radius: 50%;
     font-size: 20px;
+    width: 47.5px;
 }
 
 #linkedin-button:hover {
@@ -92,6 +108,10 @@ html body {
     background-color: #d46245;
 }
 
+.youtube-badge {
+    background-color: #FF0100;
+}
+
 .featured-project {
     width: 75%;
 }
@@ -103,6 +123,19 @@ html body {
 .experience-text {
     margin-left: 73px;
     margin-top: -20px;
+}
+
+.link-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.link-img-container:hover .link-img {
+    opacity: 0.3;
 }
 
 
