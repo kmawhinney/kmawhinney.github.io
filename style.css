@@ -88,12 +88,26 @@ html body {
     border-bottom: 1.5px solid #c9c7c7;
 }
 
+/* BADGES */
+
 .py-badge {
     background-color: #3476AA;
 }
 
+.django-badge {
+    background-color: #0d6042;
+}
+
 .git-badge {
     background-color: #888888;
+}
+
+.heroku-badge {
+    background-color: #8460AA;
+}
+
+.aws-badge {
+    background-color: #d46245;
 }
 
 .restapi-badge {
@@ -108,9 +122,15 @@ html body {
     background-color: #d46245;
 }
 
+.postgresql-badge {
+    background-color: #3B6C95;
+}
+
 .youtube-badge {
     background-color: #FF0100;
 }
+
+
 
 .featured-project {
     width: 75%;

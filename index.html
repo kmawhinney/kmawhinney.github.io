@@ -33,6 +33,10 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
 
@@ -46,13 +50,17 @@
 
 
     <!-- Socials -->
-    <div id="about" class="container text-center mt-5">
+    <div id="socials" class="container text-center mt-5">
         <img src="images/kealan-profile-photo.jpg" class="img-fluid" style="border-radius: 50%; width: 132px;" alt="...">
         <h1>Hi, I'm Kealan!</h1>
         <p id="lead-text" class="text-muted">
-            I'm a computer science and business student at the University of British Columbia.
+            Incoming SDE Intern @ <a href="https://www.amazon.com/" target="_blank" class="text-muted">
+              Amazon
+            </a>
             <br>
-            Actively seeking internships in software engineering and product management.
+            Currently Learning: <a href="https://en.wikipedia.org/wiki/Algorithmic_trading" target="_blank" class="text-muted">
+              Algorithmic Trading
+            </a>
         </p>
 
 
@@ -83,9 +91,169 @@
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
      </div>
 
+    <!-- About Me -->
+    <div id="about-me" class="container mt-5">
+      <h2>About Me</h2>
+      
+      <!-- Student & Entrepreneur -->
+      <div class="row">
+        <div class="col me-4">
+          <h4>Student & Entrepreneur</h4>
+          <p class="text-muted" style="font-size:large;">
+            I am a 3rd year business student at the University of British
+            Columbia. I am incredibly passionate about solving difficult
+            problems through entrepreneurship and technology. My greatest
+            strength is my ability to learn anything I put my mind to, and
+            I love to teach others who are also interested in learning.
+          </p>
+        </div>
+
+        <div class="col ms-4">
+          <h4>Interests</h4>
+          <p class="text-muted" style="font-size:22px;">
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-chess-knight"></i> Chess</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-coins"></i> Finance</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
+            <br>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> Games</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-comments"></i> Debate</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-volleyball-ball"></i> Sports</span>
+            <br>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> Cards</span>
+            <span class="badge bg-secondary me-1"><i class="fa-brands fa-youtube"></i> YouTube</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Software Engineering -->
+      <div class="row mt-5">
+        <div class="col me-4">
+          <h4>Software Engineering</h4>
+          <p class="text-muted" style="font-size:large;">
+            With zero coding experience and a non-technical degree, I had to teach myself how to program.
+            Along the way I've learned a ton, built my own website and online business, and I've even been
+            fortunate enough to land an internship at Amazon for Summer 2023, where I'm excited to learn even more!
+          </p>
+        </div>
+
+        <div class="col ms-4">
+          <!--
+          <h4>Skills</h4>
+          <p class="text-muted" style="font-size:large;">
+            <p class="text-muted" style="font-size:22px;">
+              <span class="badge bg-secondary me-1"><i class="fa-brands fa-python"></i> Python (Django, Flask)</span>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-hashtag"></i> C#</span>
+              <br>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> add later</span>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-comments"></i> add later</span>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-volleyball-ball"></i> add</span>
+              <br>
+              <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> later</span>
+            </p>
+          </p>
+        -->
+        </div>
+      </div>
+      
+
+    </div>
+
+
+     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    </div>
+
     <!-- Projects -->
     <div id="projects" class="container mt-5">
           <h2>Projects</h2>
+
+          <!-- TechJobPrep -->
+          <div class="card mb-4" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-5">
+
+                <div id="techjobprep-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <div class="link-img-container">
+                        <a href="https://www.techjobprep.com/" target="_blank">
+                        <img src="images/TechJobPrep/TechJobPrep Home.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Home</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <div class="link-img-container">
+                        <a href="https://www.techjobprep.com/roadmaps/software-engineering/" target="_blank">
+                        <img src="images/TechJobPrep/TechJobPrep Roadmap.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Roadmaps</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="link-img-container">
+                        <a href="https://www.techjobprep.com/courses/" target="_blank">
+                        <img src="images/TechJobPrep/TechJobPrep Courses.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                        </a>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 16px;">Courses</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">TechJobPrep</h5>
+                  <h6>
+                    <span class="django-badge badge rounded-pill">Django</span>
+                    <span class="postgresql-badge badge rounded-pill">PostgreSQL</span>
+                    <span class="heroku-badge badge rounded-pill">Heroku</span>
+                    <span class="aws-badge badge rounded-pill">AWS</span>
+                  </h6>
+                  <p class="card-text">
+                    TechJobPrep is an interview preparation platform designed to help people break into the tech industry by providing resources such as roadmaps and courses.
+                    <ul style="font-size: 14px;">
+                        <li>
+                          Developed back-end using Django, designed front-end primarily using Bootstrap
+                        </li>
+                        <li>
+                          Deployed using Heroku, with automatic deploys linked from GitHub
+                        </li>
+                        <li>
+                          Implemented PostgreSQL database to store user account information such as enrolled courses
+                        </li>
+                        <li>
+                          Created and linked AWS S3 Buckets to store and host static files for production
+                        </li>
+                        <li>
+                          Implemented Google OAuth as a third-party login, and Google Analytics to track performance
+                        </li>
+                    </ul>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Codebagel YouTube -->
           <div class="card mb-4" style="max-width: 100%;">
@@ -122,7 +290,6 @@
               </div>
             </div>
           </div>
-
 
           <!-- BuiltByMe -->
           <div class="card mb-4" style="max-width: 100%;">
@@ -209,7 +376,6 @@
             </div>
           </div>
 
-
           <!-- Personal Portfolio -->
           <div class="card mb-4" style="max-width: 100%;">
             <div class="row g-0">
@@ -239,7 +405,6 @@
               </div>
             </div>
           </div>
-
 
           <!-- Reddit Popularity Keyword Scraper -->
           <div class="card mb-4" style="max-width: 100%;">
@@ -274,7 +439,6 @@
               </div>
             </div>
           </div>
-
           
           <!-- Financial Voice Assistant -->
           <div class="card mb-4" style="max-width: 100%;">
@@ -325,6 +489,40 @@
     <div id="experience" class="container mt-5">
       <h2>Experience</h2>
 
+      <!-- Amazon -->
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div>
+            <div class="card-body">
+
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="images/Amazon Logo.jpg" style="width:75px; margin-right: 10px;" alt="img"/>
+              </div>
+
+              <div style="display:inline-block;">
+                <h5 class="mb-1">Incoming Software Engineering Intern</h5>
+                <p class="text-muted">
+                  <b>Amazon</b> | Vancouver, British Columbia, Canada
+                  <br>
+                  May 2023 - Jul 2023
+                </p>
+              </div>
+
+              <div class="experience-text">
+                <p>
+                  <ul>
+                    <li>
+                      Working at Amazon as an SDE intern during Summer 2023
+                    </li>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- BDO Canada Management Consulting -->
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row g-0">
@@ -338,7 +536,7 @@
               <div style="display:inline-block;">
                 <h5 class="mb-1">Management Consulting Analyst - Go-To-Market Strategy</h5>
                 <p class="text-muted">
-                  BDO Canada | Vancouver, British Columbia, Canada
+                  <b>BDO Canada</b> | Vancouver, British Columbia, Canada
                   <br>
                   Aug 2021 - Dec 2021
                 </p>
@@ -381,7 +579,7 @@
               <div style="display:inline-block;">
                 <h5 class="mb-1">Co-Founder</h5>
                 <p class="text-muted">
-                  Edventure | Vancouver, British Columbia, Canada
+                  <b>Edventure</b> | Vancouver, British Columbia, Canada
                   <br>
                   May 2021 - Aug 2021
                 </p>
@@ -427,7 +625,7 @@
               <div style="display:inline-block;">
                 <h5 class="mb-1">Summer Development Team</h5>
                 <p class="text-muted">
-                  Sauder JDC West | Vancouver, British Columbia, Canada
+                  <b>Sauder JDC West</b> | Vancouver, British Columbia, Canada
                   <br>
                   May 2021 - Jul 2021
                 </p>
