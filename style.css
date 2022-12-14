@@ -20,7 +20,6 @@ html body {
     border-radius: 50%;
     width: 50px;
 }
-
 #leetcode-button:hover {
     background-color: #fe8104;
     color: white;
@@ -35,7 +34,6 @@ html body {
     width: 50px;
     font-size: 21px;
 }
-
 #youtube-button:hover {
     background-color: #FF0100;
     color: white;
@@ -50,7 +48,6 @@ html body {
     font-size: 20px;
     width: 47.5px;
 }
-
 #linkedin-button:hover {
     background-color: #0e76a8;
     color: white;
@@ -64,7 +61,6 @@ html body {
     border-radius: 50%;
     font-size: 20px;
 }
-
 #github-button:hover {
     background-color: #000000;
     color: white;
@@ -78,7 +74,6 @@ html body {
     border-radius: 50%;
     font-size: 20px;
 }
-
 #email-button:hover {
     background-color: #516E81;
     color: white;
@@ -88,7 +83,64 @@ html body {
     border-bottom: 1.5px solid #c9c7c7;
 }
 
-/* BADGES */
+/* Skills */
+
+#python-skill {
+    background-color: #006bc8;
+    border: none;
+    transition: 0.25s;
+}
+
+#python-skill:hover {
+    background-color: #00457a;
+}
+
+#js-skill {
+    background-color: #a29a00;
+    border: none;
+    transition: 0.25s;
+}
+
+#js-skill:hover {
+    background-color: #82762b;
+}
+
+#sql-skill {
+    background-color: #565656;
+    border: none;
+    transition: 0.25s;
+}
+
+#sql-skill:hover {
+    background-color: #2c2c2c;
+}
+
+#developer-skill {
+    background-color: #001c78;
+    border: none;
+    transition: 0.25s;
+}
+
+#developer-skill:hover {
+    background-color: #000a29;
+}
+
+#design-skill {
+    background-color: #881486;
+    border: none;
+    transition: 0.25s;
+}
+
+#design-skill:hover {
+    background-color: #640d61;
+}
+
+#skill-badge {
+    font-size: medium;
+}
+
+
+/* Project Badges */
 
 .py-badge {
     background-color: #3476AA;
@@ -130,8 +182,6 @@ html body {
     background-color: #FF0100;
 }
 
-
-
 .featured-project {
     width: 75%;
 }
@@ -153,11 +203,13 @@ html body {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-  
 .link-img-container:hover .link-img {
     opacity: 0.3;
 }
 
+#about-me-tooltip-headers {
+    display: inline-flex;
+}
 
 @media screen and (max-width: 768px) {
     .featured-project {

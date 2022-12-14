@@ -46,7 +46,7 @@
 
           </div>
         </div>
-      </nav>
+    </nav>
 
 
     <!-- Socials -->
@@ -58,8 +58,8 @@
               Amazon
             </a>
             <br>
-            Currently Learning: <a href="https://en.wikipedia.org/wiki/Algorithmic_trading" target="_blank" class="text-muted">
-              Algorithmic Trading
+            Currently Learning: <a href="https://expressjs.com/" target="_blank" class="text-muted">
+              Express (Node.js)
             </a>
         </p>
 
@@ -87,9 +87,9 @@
     </div>
 
 
-
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
-     </div>
+    </div>
+
 
     <!-- About Me -->
     <div id="about-me" class="container mt-5">
@@ -97,7 +97,7 @@
       
       <!-- Student & Entrepreneur -->
       <div class="row">
-        <div class="col me-4">
+        <div class="col-7">
           <h4>Student & Entrepreneur</h4>
           <p class="text-muted" style="font-size:large;">
             I am a 3rd year business student at the University of British
@@ -108,17 +108,17 @@
           </p>
         </div>
 
-        <div class="col ms-4">
+        <!-- Interests -->
+        <div class="col-5">
           <h4>Interests</h4>
+
           <p class="text-muted" style="font-size:22px;">
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-chess-knight"></i> Chess</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-coins"></i> Finance</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
-            <br>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> Games</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-comments"></i> Debate</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-volleyball-ball"></i> Sports</span>
-            <br>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> Cards</span>
             <span class="badge bg-secondary me-1"><i class="fa-brands fa-youtube"></i> YouTube</span>
           </p>
@@ -127,7 +127,7 @@
 
       <!-- Software Engineering -->
       <div class="row mt-5">
-        <div class="col me-4">
+        <div class="col-7">
           <h4>Software Engineering</h4>
           <p class="text-muted" style="font-size:large;">
             With zero coding experience and a non-technical degree, I had to teach myself how to program.
@@ -136,32 +136,107 @@
           </p>
         </div>
 
-        <div class="col ms-4">
-          <!--
-          <h4>Skills</h4>
-          <p class="text-muted" style="font-size:large;">
-            <p class="text-muted" style="font-size:22px;">
-              <span class="badge bg-secondary me-1"><i class="fa-brands fa-python"></i> Python (Django, Flask)</span>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-database"></i> SQL</span>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-hashtag"></i> C#</span>
-              <br>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> add later</span>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-comments"></i> add later</span>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-volleyball-ball"></i> add</span>
-              <br>
-              <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> later</span>
-            </p>
+        <!-- Skills -->
+        <div class="col-5">
+
+          <div style="display:inline-flex;">
+            <h4>Skills</h4>
+            <i class="fa-solid fa-circle-question mx-1" style="color:rgb(143, 143, 143);" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Click any skill for more info!"></i>
+          </div>
+
+          <p style="font-size:medium; margin-bottom:4px;">
+            <!-- Button Column -->
+            <div class="col">
+              <div style="display:inline-block;">
+
+              <!-- Python -->
+              <button id="python-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonSkill" aria-expanded="false" aria-controls="pythonSkill">
+                <i class="fa-brands fa-python"></i> Python
+              </button>
+              
+              <!-- JavaScript -->
+              <button id="js-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#jsSkill" aria-expanded="false" aria-controls="jsSkill">
+                <i class="fa-brands fa-square-js"></i> JavaScript
+              </button>
+
+              <!-- SQL -->
+              <button id="sql-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#sqlSkill" aria-expanded="false" aria-controls="sqlSkill">
+                <i class="fa-solid fa-database"></i> SQL
+              </button>
+
+              <!-- Developer Tools -->
+              <button id="developer-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#developerSkill" aria-expanded="false" aria-controls="developerSkill">
+                <i class="fa-solid fa-code"></i> Developer Tools
+              </button>
+
+              <!-- Design Tools -->
+              <button id="design-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#designSkill" aria-expanded="false" aria-controls="designSkill">
+                <i class="fa-solid fa-palette"></i> Design Tools
+              </button>
+
+              </div>
+            </div>
+
+            <!-- Dropdown Column -->
+            <div class="col">
+
+              <!-- Python -->
+              <div class="collapse" id="pythonSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color:#003A2B;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-globe"></i> Django</span>
+                  <span style="background-color:#6e6e6e;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="collapse" id="jsSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color:#02bcdd;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-react"></i> React</span>
+                  <span style="background-color:#4D9641;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-node"></i> Node</span>
+                  <span style="background-color:#3178C6;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-js"></i> TypeScript</span>
+                </div>
+              </div>
+
+              <!-- SQL -->
+              <div class="collapse" id="sqlSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color:#2F6792;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-table"></i> PostgreSQL</span>
+                  <span style="background-color:#023A57;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-feather"></i> SQLite</span>
+                </div>
+              </div>
+
+              <!-- Developer Tools -->
+              <div class="collapse" id="developerSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color:#d46245;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-aws"></i> AWS</span>
+                  <span style="background-color:#8460AA;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-server"></i> Heroku</span>
+                  <span style="background-color:#000000;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-github"></i> Git</span>
+                </div>
+              </div>
+
+              <!-- Design Tools -->
+              <div class="collapse" id="designSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color:#e11515;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-figma"></i> Figma</span>
+                  <span style="background-color:#00357a;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-image"></i> Photoshop</span>
+                  <span style="background-color:#c96400;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-pen-to-square"></i> Illustrator</span>
+                  <span style="background-color:#2d13c2;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-video"></i> Premiere Pro</span>
+                </div>
+              </div>
+
+            </div>
           </p>
-        -->
         </div>
+
       </div>
       
 
     </div>
 
 
-     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
     </div>
+
 
     <!-- Projects -->
     <div id="projects" class="container mt-5">
@@ -478,12 +553,12 @@
             </div>
           </div>
     
-      </div>
-
+    </div>
 
 
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
     </div>
+
 
     <!-- Experience -->
     <div id="experience" class="container mt-5">
@@ -651,6 +726,11 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
   </body>
 </html>
