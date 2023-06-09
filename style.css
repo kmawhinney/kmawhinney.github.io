@@ -211,6 +211,15 @@ html body {
     display: inline-flex;
 }
 
+.see-more-btn-style {
+    border: none;
+    transition: 0.25s;
+}
+
+.see-more-btn-style:hover {
+    background-color: #d8d8d8;
+}
+
 @media screen and (max-width: 768px) {
     .featured-project {
         width: 100%;
@@ -219,3 +228,15 @@ html body {
         margin-left: 0px;
     }
 }
+
+@media (max-width: 992px) {
+    .custom-text-align {
+      text-align: center;
+    }
+}
+@media (min-width: 992px) {
+    .custom-text-align {
+      text-align: left;
+    }
+}
+  
