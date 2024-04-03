@@ -38,11 +38,11 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#experience">Experience</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
 
           </div>
@@ -54,19 +54,18 @@
     <div id="socials" class="container mt-5">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end">
-          <img src="images/Doggo Profile Photo.JPG" class="img-fluid" style="border-radius: 50%; width: 175px;" alt="...">
+          <img src="images/kealan-square-profile-photo.jpeg" class="img-fluid" style="border-radius: 50%; width: 175px;" alt="...">
         </div>
         <div class="col-lg-8 text-left">
           <h1 class="custom-text-align">Hi, I'm Kealan! 👋</h1>
           <p id="lead-text" class="text-muted custom-text-align">
-            Seeking 2024 Internships | Prev. SWE @
-            <a href="https://aws.amazon.com/s3/" target="_blank" class="text-muted">Amazon S3</a>
+            Software Engineer & Content Creator
             <br>
-            Currently Learning:
-            <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" class="text-muted">Machine Learning</a>
-            <br>
-            Currently Building:
-            <a href="https://pawvault.app/" target="_blank" class="text-muted">Pawvault</a>
+            Incoming SWE Intern @ 
+            <a href="https://www.microsoft.com/" target="_blank" class="text-muted">Microsoft</a>
+            •
+            Content Creator @ 
+            <a href="https://www.youtube.com/@Codebagel/featured" target="_blank" class="text-muted">Codebagel</a>
           </p>
         </div>
       </div>
@@ -85,21 +84,18 @@
             <i class="fab fa-github"></i>
           </a>
     
+          <!--
           <a id="leetcode-button" class="btn btn-primary mx-2" href="https://leetcode.com/kealanm/" target="_blank" role="button">
             <span class="iconify" style="font-size: 32px; padding-bottom: 3px; padding-right: 11px;" data-icon="simple-icons:leetcode"></span>
           </a>
+          -->
     
           <a id="youtube-button" class="btn btn-primary mx-2" href="https://www.youtube.com/channel/UChqNJc6T93_uRl2nvmoBm4Q" target="_blank" role="button">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
-    </div>
-    
-    
-    
-    
-
+    </div>  
 
     <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
     </div>
@@ -127,14 +123,13 @@
           <h4>Interests</h4>
 
           <p class="text-muted" style="font-size:22px;">
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-chess-knight"></i> Chess</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-coins"></i> Finance</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> Games</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-comments"></i> Debate</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-volleyball-ball"></i> Sports</span>
-            <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> Cards</span>
             <span class="badge bg-secondary me-1"><i class="fa-brands fa-youtube"></i> YouTube</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-basketball-ball"></i> Basketball</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-chess-knight"></i> Chess</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> Cards</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> Games</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-coins"></i> Finance</span>
           </p>
         </div>
       </div>
@@ -145,9 +140,8 @@
           <h4>Software Engineering</h4>
           <p class="text-muted" style="font-size:large;">
             With zero programming experience, I had to teach myself how to code from scratch.
-            Along the way I've learned a ton, created an educational YouTube channel, and interned at Amazon,
-            solving distributed systems problems on the AWS S3 team, the world's largest cloud storage platform.
-            I'm currently building Pawvault, a pet records management SaaS product.
+            Along the way I've learned how to develop web and iOS apps, created an educational YouTube channel,
+            and interned at Microsoft and Amazon, building scalable software for billions.
           </p>
         </div>
 
@@ -163,6 +157,16 @@
             <!-- Button Column -->
             <div class="col">
               <div style="display:inline-block;">
+
+              <!-- Java -->
+              <button id="java-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#javaSkill" aria-expanded="false" aria-controls="javaSkill">
+                <i class="fa-brands fa-java"></i> Java
+              </button>
+
+              <!-- Swift -->
+              <button id="swift-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#swiftSkill" aria-expanded="false" aria-controls="swiftSkill">
+                <i class="fa-brands fa-swift"></i> Swift
+              </button>
 
               <!-- Python -->
               <button id="python-skill" class="btn btn-primary fw-bold mb-2 mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#pythonSkill" aria-expanded="false" aria-controls="pythonSkill">
@@ -195,15 +199,27 @@
             <!-- Dropdown Column -->
             <div class="col">
 
+              <!-- Java -->
+              <div class="collapse" id="javaSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color: #029f62;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-seedling"></i> Spring Boot</span>
+                </div>
+              </div>
+
+              <!-- Swift -->
+              <div class="collapse" id="swiftSkill">
+                <div class="card card-body" style="display:inline-block;">
+                  <span style="background-color: #0086c4;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-mobile-screen-button"></i> SwiftUI</span>
+                  <span style="background-color: #888888;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-database"></i> Swift Data</span>
+                </div>
+              </div>
+
               <!-- Python -->
               <div class="collapse" id="pythonSkill">
                 <div class="card card-body" style="display:inline-block;">
-                  <span style="background-color:#d15b00;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-brain"></i> TensorFlow</span>
-                  <span style="background-color:#029f62;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-chart-simple"></i> Scikit-Learn</span>
-                  <span style="background-color:#4A73C9;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-calculator"></i> NumPy</span>
-                  <span style="background-color:#83708d;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-language"></i> NLTK</span>
                   <span style="background-color:#003A2B;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-globe"></i> Django</span>
                   <span style="background-color:#6e6e6e;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+                  <span style="background-color:#4A73C9;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-calculator"></i> NumPy</span>
                 </div>
               </div>
 
@@ -229,7 +245,8 @@
                 <div class="card card-body" style="display:inline-block;">
                   <span style="background-color:#1A60E6;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-docker"></i> Docker</span>
                   <span style="background-color:#d46245;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-aws"></i> AWS</span>
-                  <span style="background-color:#8460AA;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-server"></i> Heroku</span>
+                  <span style="background-color:#e34400;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-solid fa-server"></i> Postman</span>
+                  <span style="background-color:#976bad;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-aws"></i> Retool</span>
                   <span style="background-color:#000000;" id="skill-badge" class="badge rounded-pill mb-1 mt-1 me-1"><i class="fa-brands fa-github"></i> Git</span>
                 </div>
               </div>
@@ -250,35 +267,246 @@
 
       </div>
 
-      <!-- Machine Learning -->
-      <div class="row mt-5">
-        <div class="col-md-7">
-          <h4>Machine Learning</h4>
-          <p class="text-muted" style="font-size:large;">
-            Using data and algorithms to teach computer systems how to learn is
-            an area I'm deeply passionate about. I have both formal and self-taught
-            education in related areas, and I am planning on pursuing a Master's in
-            Computer Science, specializing in Machine Learning. I am particularly
-            passionate about NLP and computer vision, and planning on completing research
-            in one of these areas.
-          </p>
-        </div>
+    </div>
 
-        <!-- AI/ML Courses -->
-        <div class="col-md-5">
-          <h4>Courses</h4>
 
-          <p class="text-muted" style="font-size:22px;">
-            <span class="badge bg-success bg-gradient me-1">Models of Computation</span>
-            <span class="badge bg-success bg-gradient me-1">Linear Algebra</span>
-            <span class="badge bg-success bg-gradient me-1">Multivariable Calculus</span>
-            <span class="badge bg-success bg-gradient me-1">Supervised Machine Learning</span>
-            <span class="badge bg-success bg-gradient me-1">Advanced Learning Algorithms</span>
-            <span class="badge bg-success bg-gradient me-1">Unsupervised and Reinforcement Machine Learning</span>
-          </p>
+    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    </div>
+
+
+    <!-- Experience -->
+    <div id="experience" class="container mt-5">
+      <h2>Experience</h2>
+
+      <!-- Microsoft -->
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div>
+            <div class="card-body">
+
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="images/microsoft_logo.png" style="width:75px; margin-right: 10px;" alt="img"/>
+              </div>
+
+              <div style="display:inline-block;">
+                <h5 class="mb-1">Software Engineering Intern</h5>
+                <p class="text-muted">
+                  <b>Microsoft</b> | Vancouver, British Columbia, Canada
+                  <br>
+                  Apr 2024 - Aug 2024
+                </p>
+              </div>
+
+              <div class="experience-text">
+                <p>
+                  <ul>
+                    <li>
+                      🔜 Incoming intern at Microsoft for Summer 2024
+                    </li>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-      
+
+      <!-- Nimble -->
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div>
+            <div class="card-body">
+
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="images/nimblerx_logo.jpeg" style="width:75px; margin-right: 10px;" alt="img"/>
+              </div>
+
+              <div style="display:inline-block;">
+                <h5 class="mb-1">Software Engineering Intern</h5>
+                <p class="text-muted">
+                  <b>Nimble</b> | Vancouver, British Columbia, Canada
+                  <br>
+                  Jan 2024 - Apr 2024
+                </p>
+              </div>
+
+              <div class="experience-text">
+                <p>
+                  <ul>
+                    <li>
+                      💊 NimbleRx - Building the largest, most loved pharmacy technology platform for prescriptions
+                    </li>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AWS -->
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div>
+            <div class="card-body">
+
+              <div style="display:inline-block;vertical-align:top;">
+                <img src="images/amazon_web_services_logo.jpeg" style="width:75px; margin-right: 10px;" alt="img"/>
+              </div>
+
+              <div style="display:inline-block;">
+                <h5 class="mb-1">Software Engineering Intern</h5>
+                <p class="text-muted">
+                  <b>Amazon Web Services (AWS)</b> | Vancouver, British Columbia, Canada
+                  <br>
+                  May 2023 - Aug 2023
+                </p>
+              </div>
+
+              <div class="experience-text">
+                <p>
+                  <ul>
+                    <li>
+                      🪣 Amazon S3 - The world's largest cloud storage platform
+                    </li>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional experience to be hidden initially -->
+      <div id="extra-experience">
+
+        <!-- BDO Canada Management Consulting -->
+        <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div>
+              <div class="card-body">
+
+                <div style="display:inline-block;vertical-align:top;">
+                  <img src="images/bdo-canada.png" style="width:75px; margin-right: 10px;" alt="img"/>
+                </div>
+
+                <div style="display:inline-block;">
+                  <h5 class="mb-1">Management Consulting Intern</h5>
+                  <p class="text-muted">
+                    <b>BDO Canada</b> | Vancouver, British Columbia, Canada
+                    <br>
+                    Aug 2021 - Dec 2021
+                  </p>
+                </div>
+
+                <div class="experience-text" style="display:inline-block;">
+                  <p>
+                    <ul>
+                      <li>
+                        🚀 Go-To-Market Strategy - Helping businesses bring their products from innovation to the market
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edventure -->
+        <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div>
+              <div class="card-body">
+
+                <div style="display:inline-block;vertical-align:top;">
+                  <img src="images/Edventure Logo.png" style="width:75px; margin-right: 10px;" alt="img"/>
+                </div>
+
+                <div style="display:inline-block;">
+                  <h5 class="mb-1">Co-Founder</h5>
+                  <p class="text-muted">
+                    <b>Edventure</b> | Vancouver, British Columbia, Canada
+                    <br>
+                    May 2021 - Aug 2021
+                  </p>
+                </div>
+
+                <div class="experience-text" style="display:inline-block;">
+                  <p>
+                    <ul>
+                      <li>
+                        Founded Edventure, an online education startup where users would learn to code by building projects they care about
+                      </li>
+                      <li>
+                        Developed a minimum viable product (MVP) where curriculum is customized for each user by scraping online resources related to chosen project
+                      </li>
+                      <li>
+                        Achieved a 75% project success rate through MVP cohort testing, designed to validate product-market fit and identify areas of improvement
+                      </li>
+                      <li>
+                        Conducted over 100 primary user interviews as part of A/B testing for various software designs
+                      </li>
+                      <li>
+                        Received 4/4 yesses from investors during mock VC pitch of go-to-market business plan at the end of a 3-month entrepreneurship@UBC incubator program
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UBC Sauder JDC West -->
+        <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div>
+              <div class="card-body">
+
+                <div style="display:inline-block;vertical-align:top;">
+                  <img src="images/sauder-jdc-west.png" style="width:75px; margin-right: 10px;" alt="img"/>
+                </div>
+
+                <div style="display:inline-block;">
+                  <h5 class="mb-1">Summer Development Team</h5>
+                  <p class="text-muted">
+                    <b>Sauder JDC West</b> | Vancouver, British Columbia, Canada
+                    <br>
+                    May 2021 - Jul 2021
+                  </p>
+                </div>
+
+                <div class="experience-text" style="display:inline-block;">
+                  <p>
+                    <ul>
+                      <li>
+                        💼 Presented data-driven and systematically-designed solutions to business cases from Harvard, Stanford, and Ivey
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+            
+      <div id="see-more-experience" class="text-center mt-4">
+        <button id="toggle-experience" class="btn btn-lg fw-bold see-more-btn-style" type="button">
+          <span class="btn-icon">
+            <i id="toggle-experience-icon" class="fas fa-chevron-down"></i>
+          </span>
+          <span id="toggle-experience-text">See More</span>
+        </button>
+      </div>
 
     </div>
 
@@ -291,53 +519,6 @@
     <div id="projects" class="container mt-5">
           <h2>Projects</h2>
 
-          <!-- Pawvault -->
-          <div class="card mb-4" style="max-width: 100%;">
-            <div class="row g-0">
-              <div class="col-md-5">
-                <div class="link-img-container">
-                  <a href="https://pawvault.app/" target="_blank">
-                  <img src="images/Pawvault-Portfolio-Thumbnail.jpeg" class="img-fluid rounded-start link-img" alt="...">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">Pawvault</h5>
-                  <h6>
-                    <span class="django-badge badge rounded-pill">Django</span>
-                    <span style="background-color: #029f62;" class="badge rounded-pill">Scikit-Learn</span>
-                    <span style="background-color: #1A60E6;" class="badge rounded-pill">Docker</span>
-                    <span class="postgresql-badge badge rounded-pill">PostgreSQL</span>
-                    <span style="background-color: #615bcd;" class="badge rounded-pill">Stripe</span>
-                    <span class="aws-badge badge rounded-pill">AWS</span>
-                  </h6>
-                  <p class="card-text">
-                    Pawvault is an all-in-one veterinarian clinic management SaaS platform. It provides vet clinics with
-                    pet records management and appointment scheduling software, and allows pet owners to better track
-                    their pets' health information.
-                    <ul style="font-size: 14px;">
-                        <li>
-                          Built responsive and engaging landing page with Django, JavaScript, and custom Bootstrap SCSS styling
-                        </li>
-                        <li>
-                          Designing multi-tenancy system to partition individual clinic data and ensure data integrity and security 
-                        </li>
-                        <li>
-                          Integrating machine learning recommendation algorithm to assist staff and clients with pet health decisions
-                        </li>
-                        <li>
-                          Using Stripe's API to develop and implement a custom pay-per-seat subscription model
-                        </li>
-                        <li>
-                          Deployed using Docker containerization, with GitHub actions for CI/CD, and Sentry for error monitoring
-                        </li>
-                    </ul>
-                </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- Codebagel YouTube -->
           <div class="card mb-4" style="max-width: 100%;">
@@ -360,101 +541,16 @@
                     required to build a career in software engineering, including data structures & algorithms, system design, interviewing, etc.
                     <ul style="font-size: 14px;">
                         <li>
-                          Achieved 300,000 unique views and over 3,800 subscribers
+                          Achieved over 700,000 unique views and 17,500 subscribers by creating visualization-based educational coding videos
                         </li>
                         <li>
-                          Improved user click-through rate by 100% by conducting A/B testing of video design
+                          Received like percentage of 99.1% on all data structures & algorithms educational content
                         </li>
                         <li>
-                          Increased audience retention by 35% by analyzing KPIs to develop engagement strategies
-                        </li>
-                    </ul>
-                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TechJobPrep -->
-          <div class="card mb-4" style="max-width: 100%;">
-            <div class="row g-0">
-              <div class="col-md-5">
-
-                <div id="techjobprep-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <div class="link-img-container">
-                        <a href="https://www.techjobprep.com/" target="_blank">
-                        <img src="images/TechJobPrep/TechJobPrep Home.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
-                        </a>
-                      </div>
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5 style="font-size: 16px;">Home</h5>
-                      </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <div class="link-img-container">
-                        <a href="https://www.techjobprep.com/roadmaps/software-engineering/" target="_blank">
-                        <img src="images/TechJobPrep/TechJobPrep Roadmap.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
-                        </a>
-                      </div>
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5 style="font-size: 16px;">Roadmaps</h5>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="link-img-container">
-                        <a href="https://www.techjobprep.com/courses/" target="_blank">
-                        <img src="images/TechJobPrep/TechJobPrep Courses.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
-                        </a>
-                      </div>
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5 style="font-size: 16px;">Courses</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <h5 class="card-title">TechJobPrep</h5>
-                  <h6>
-                    <span class="django-badge badge rounded-pill">Django</span>
-                    <span class="postgresql-badge badge rounded-pill">PostgreSQL</span>
-                    <span class="heroku-badge badge rounded-pill">Heroku</span>
-                    <span class="aws-badge badge rounded-pill">AWS</span>
-                  </h6>
-                  <p class="card-text">
-                    TechJobPrep is an interview preparation platform designed to help people break into the tech industry by providing resources such as roadmaps and courses.
-                    <ul style="font-size: 14px;">
-                        <li>
-                          Developed back-end using Django, designed front-end primarily using Bootstrap
+                          Improved user click-through rate by 115% by conducting A/B testing of thumbnail design
                         </li>
                         <li>
-                          Deployed using Heroku, with automatic deploys linked from GitHub
-                        </li>
-                        <li>
-                          Implemented PostgreSQL database to store user account information such as enrolled courses
-                        </li>
-                        <li>
-                          Created and linked AWS S3 Buckets to store and host static files for production
-                        </li>
-                        <li>
-                          Implemented Google OAuth as a third-party login, and Google Analytics to track performance
+                          Increased audience retention by 35% through analysis of user trends and KPIs to develop engagement strategies
                         </li>
                     </ul>
                 </p>
@@ -465,6 +561,142 @@
 
           <!-- Additional projects to be hidden initially -->
           <div id="extra-projects">
+
+            <!-- Pawvault -->
+            <div class="card mb-4" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="link-img-container">
+                    <a href="https://pawvault.app/" target="_blank">
+                    <img src="images/Pawvault-Portfolio-Thumbnail.jpeg" class="img-fluid rounded-start link-img" alt="...">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Pawvault</h5>
+                    <h6>
+                      <span class="django-badge badge rounded-pill">Django</span>
+                      <span style="background-color: #029f62;" class="badge rounded-pill">Scikit-Learn</span>
+                      <span style="background-color: #1A60E6;" class="badge rounded-pill">Docker</span>
+                      <span class="postgresql-badge badge rounded-pill">PostgreSQL</span>
+                      <span style="background-color: #615bcd;" class="badge rounded-pill">Stripe</span>
+                      <span class="aws-badge badge rounded-pill">AWS</span>
+                    </h6>
+                    <p class="card-text">
+                      Pawvault is an all-in-one veterinarian clinic management SaaS platform. It provides vet clinics with
+                      pet records management and appointment scheduling software, and allows pet owners to better track
+                      their pets' health information.
+                      <ul style="font-size: 14px;">
+                          <li>
+                            Built responsive and engaging landing page with Django, JavaScript, and custom Bootstrap SCSS styling
+                          </li>
+                          <li>
+                            Designing multi-tenancy system to partition individual clinic data and ensure data integrity and security 
+                          </li>
+                          <li>
+                            Integrating machine learning recommendation algorithm to assist staff and clients with pet health decisions
+                          </li>
+                          <li>
+                            Using Stripe's API to develop and implement a custom pay-per-seat subscription model
+                          </li>
+                          <li>
+                            Deployed using Docker containerization, with GitHub actions for CI/CD, and Sentry for error monitoring
+                          </li>
+                      </ul>
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TechJobPrep -->
+            <div class="card mb-4" style="max-width: 100%;">
+              <div class="row g-0">
+                <div class="col-md-5">
+
+                  <div id="techjobprep-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#techjobprep-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="link-img-container">
+                          <a href="https://www.techjobprep.com/" target="_blank">
+                          <img src="images/TechJobPrep/TechJobPrep Home.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                          </a>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="font-size: 16px;">Home</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="link-img-container">
+                          <a href="https://www.techjobprep.com/roadmaps/software-engineering/" target="_blank">
+                          <img src="images/TechJobPrep/TechJobPrep Roadmap.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                          </a>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="font-size: 16px;">Roadmaps</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="link-img-container">
+                          <a href="https://www.techjobprep.com/courses/" target="_blank">
+                          <img src="images/TechJobPrep/TechJobPrep Courses.png" class="img-fluid rounded-start link-img d-block w-100" alt="...">
+                          </a>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="font-size: 16px;">Courses</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#techjobprep-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">TechJobPrep</h5>
+                    <h6>
+                      <span class="django-badge badge rounded-pill">Django</span>
+                      <span class="postgresql-badge badge rounded-pill">PostgreSQL</span>
+                      <span class="heroku-badge badge rounded-pill">Heroku</span>
+                      <span class="aws-badge badge rounded-pill">AWS</span>
+                    </h6>
+                    <p class="card-text">
+                      TechJobPrep is an interview preparation platform designed to help people break into the tech industry by providing resources such as roadmaps and courses.
+                      <ul style="font-size: 14px;">
+                          <li>
+                            Developed back-end using Django, designed front-end primarily using Bootstrap
+                          </li>
+                          <li>
+                            Deployed using Heroku, with automatic deploys linked from GitHub
+                          </li>
+                          <li>
+                            Implemented PostgreSQL database to store user account information such as enrolled courses
+                          </li>
+                          <li>
+                            Created and linked AWS S3 Buckets to store and host static files for production
+                          </li>
+                          <li>
+                            Implemented Google OAuth as a third-party login, and Google Analytics to track performance
+                          </li>
+                      </ul>
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- BuiltByMe -->
             <div class="card mb-4" style="max-width: 100%;">
@@ -667,204 +899,9 @@
     </div>
 
 
-    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
-    </div>
-
-
-    <!-- Experience -->
-    <div id="experience" class="container mt-5">
-      <h2>Experience</h2>
-
-      <!-- Amazon -->
-      <div class="card mb-3" style="max-width: 100%;">
-        <div class="row g-0">
-          <div>
-            <div class="card-body">
-
-              <div style="display:inline-block;vertical-align:top;">
-                <img src="images/Amazon Logo.jpg" style="width:75px; margin-right: 10px;" alt="img"/>
-              </div>
-
-              <div style="display:inline-block;">
-                <h5 class="mb-1">Software Development Engineering Intern - S3</h5>
-                <p class="text-muted">
-                  <b>Amazon</b> | Vancouver, British Columbia, Canada
-                  <br>
-                  May 2023 - Aug 2023
-                </p>
-              </div>
-
-              <div class="experience-text">
-                <p>
-                  <ul>
-                    <li>
-                      Collaborated with a team of highly skilled engineers to design, develop, and maintain Amazon S3, the world's largest cloud storage platform
-                    </li>
-                    <li>
-                      Solved challenging distributed systems problems as a member of the S3 control plane team, maintaining the durability and health of index entities
-                    </li>
-                    <li>
-                      Designed and built a custom plugin that allows for automated deployment of my team's services during an AWS region build
-                    </li>
-                    <li>
-                      Developed comprehensive unit tests and conducted thorough integration testing to ensure the reliability and stability of new features and enhancements
-                    </li>
-                  </ul>
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- BDO Canada Management Consulting -->
-      <div class="card mb-3" style="max-width: 100%;">
-        <div class="row g-0">
-          <div>
-            <div class="card-body">
-
-              <div style="display:inline-block;vertical-align:top;">
-                <img src="images/bdo-canada.png" style="width:75px; margin-right: 10px;" alt="img"/>
-              </div>
-
-              <div style="display:inline-block;">
-                <h5 class="mb-1">Management Consulting Analyst - Go-To-Market Strategy</h5>
-                <p class="text-muted">
-                  <b>BDO Canada</b> | Vancouver, British Columbia, Canada
-                  <br>
-                  Aug 2021 - Dec 2021
-                </p>
-              </div>
-
-              <div class="experience-text" style="display:inline-block;">
-                <p>
-                  <ul>
-                    <li>
-                      Worked with four unique businesses to bring their products from innovation to the market as part of the go-to-market strategy team
-                    </li>
-                    <li>
-                      Utilized problem-solving skills and market analysis to deliver solutions for product development projects
-                    </li>
-                    <li>
-                      Created financial models through work alongside in-house accounting division
-                    </li>
-                    <li>
-                      Developed technical solutions for clients through work alongside software engineering team
-                    </li>
-                  </ul>
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Additional experience to be hidden initially -->
-      <div id="extra-experience">
-
-        <!-- Edventure -->
-        <div class="card mb-3" style="max-width: 100%;">
-          <div class="row g-0">
-            <div>
-              <div class="card-body">
-
-                <div style="display:inline-block;vertical-align:top;">
-                  <img src="images/Edventure Logo.png" style="width:75px; margin-right: 10px;" alt="img"/>
-                </div>
-
-                <div style="display:inline-block;">
-                  <h5 class="mb-1">Co-Founder</h5>
-                  <p class="text-muted">
-                    <b>Edventure</b> | Vancouver, British Columbia, Canada
-                    <br>
-                    May 2021 - Aug 2021
-                  </p>
-                </div>
-
-                <div class="experience-text" style="display:inline-block;">
-                  <p>
-                    <ul>
-                      <li>
-                        Founded Edventure, an online education startup where users would learn to code by building projects they care about
-                      </li>
-                      <li>
-                        Developed a minimum viable product (MVP) where curriculum is customized for each user by scraping online resources related to chosen project
-                      </li>
-                      <li>
-                        Achieved a 75% project success rate through MVP cohort testing, designed to validate product-market fit and identify areas of improvement
-                      </li>
-                      <li>
-                        Conducted over 100 primary user interviews as part of A/B testing for various software designs
-                      </li>
-                      <li>
-                        Received 4/4 yesses from investors during mock VC pitch of go-to-market business plan at the end of a 3-month entrepreneurship@UBC incubator program
-                      </li>
-                    </ul>
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- UBC Sauder JDC West -->
-        <div class="card mb-3" style="max-width: 100%;">
-          <div class="row g-0">
-            <div>
-              <div class="card-body">
-
-                <div style="display:inline-block;vertical-align:top;">
-                  <img src="images/sauder-jdc-west.png" style="width:75px; margin-right: 10px;" alt="img"/>
-                </div>
-
-                <div style="display:inline-block;">
-                  <h5 class="mb-1">Summer Development Team</h5>
-                  <p class="text-muted">
-                    <b>Sauder JDC West</b> | Vancouver, British Columbia, Canada
-                    <br>
-                    May 2021 - Jul 2021
-                  </p>
-                </div>
-
-                <div class="experience-text" style="display:inline-block;">
-                  <p>
-                    <ul>
-                      <li>
-                        Presented data-driven and systematically-designed solutions to business cases from Harvard, Stanford, and Ivey
-                      </li>
-                      <li>
-                        Improved critical thinking, case analysis and presentation skills through weekly coaching sessions
-                      </li>
-                    </ul>
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-            
-      <div id="see-more-experience" class="text-center mt-4">
-        <button id="toggle-experience" class="btn btn-lg fw-bold see-more-btn-style" type="button">
-          <span class="btn-icon">
-            <i id="toggle-experience-icon" class="fas fa-chevron-down"></i>
-          </span>
-          <span id="toggle-experience-text">See More</span>
-        </button>
-      </div>
-
-    </div>
-
-
     <footer class="footer mt-5 py-4 text-white bg-dark">
       <div class="container text-center">
-        <p class="mb-0">© 2023 Kealan Mawhinney. All rights reserved.</p>
+        <p class="mb-0">© 2024 Kealan Mawhinney. All rights reserved.</p>
       </div>
     </footer>
 
@@ -875,7 +912,7 @@
     <!-- Projects 'See More' -->
     <script>
       $(document).ready(function() {
-        var projectsToShow = 2; // Number of projects to show initially
+        var projectsToShow = 1; // Number of projects to show initially
         var totalProjects = $('#projects .card').length; // Total number of projects
         var isExpanded = false; // Track the state of the extra projects
     
@@ -907,7 +944,7 @@
     <!-- Experience 'See More' -->
     <script>
       $(document).ready(function() {
-        var experiencesToShow = 2; // Number of experiences to show initially
+        var experiencesToShow = 3; // Number of experiences to show initially
         var totalExperiences = $('#experience .card').length; // Total number of experiences
         var isExpanded = false; // Track the state of the extra experiences
 

@@ -85,6 +85,26 @@ html body {
 
 /* Skills */
 
+#java-skill {
+    background-color: #b52d2d;
+    border: none;
+    transition: 0.25s;
+}
+
+#java-skill:hover {
+    background-color: #6b0000;
+}
+
+#swift-skill {
+    background-color: #c55e22;
+    border: none;
+    transition: 0.25s;
+}
+
+#swift-skill:hover {
+    background-color: #7e2f02;
+}
+
 #python-skill {
     background-color: #006bc8;
     border: none;
