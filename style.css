@@ -211,8 +211,11 @@ html body {
 }
 
 .experience-text {
-    margin-left: 75px;
-    margin-top: -20px;
+    margin-bottom: 16px;
+}
+
+.experience-text p {
+    margin-bottom: unset;
 }
 
 .link-img {
