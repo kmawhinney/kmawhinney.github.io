@@ -242,6 +242,55 @@ html body {
 .see-more-btn-style:hover {
     background-color: #d8d8d8;
 }
+  
+@keyframes slideIn {
+from {
+    transform: translateY(50px);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+.slide-in {
+animation: slideIn 1s ease-in;
+}
+
+.btn-primary, 
+#email-button, 
+#linkedin-button, 
+#github-button, 
+#youtube-button {
+    transition: transform 0.15s ease-in-out;
+}
+
+.btn-primary:hover, 
+#email-button:hover, 
+#linkedin-button:hover, 
+#github-button:hover, 
+#youtube-button:hover {
+    transform: scale(1.15);
+}
+
+#typing-container {
+    display: inline;
+    border-right: 0.1em solid rgb(0, 145, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(0, 145, 255);
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .featured-project {

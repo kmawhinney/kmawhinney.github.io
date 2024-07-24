@@ -52,26 +52,31 @@
 
 
     <!-- Socials -->
-    <div id="socials" class="container mt-5">
+    <div id="socials" class="container mt-5 fade-in">
       <div class="row justify-content-center align-items-center">
-        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end">
+        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end slide-in">
           <img src="images/kealan-square-profile-photo.jpeg" class="img-fluid" style="border-radius: 50%; width: 175px;" alt="...">
         </div>
         <div class="col-lg-8 text-left">
-          <h1 class="custom-text-align">Hi, I'm Kealan! 👋</h1>
-          <p id="lead-text" class="text-muted custom-text-align">
-            <i>Seeking New Grad <b>SWE</b> & <b>PM</b> Roles</i>
+          <h1>
+            <span id="typing-container">
+              <span id="intro-text"></span>
+            </span>
+          </h1>
+          <p id="lead-text" class="text-muted custom-text-align slide-in">
+            <span class="badge" style="font-size:18px; background-color: #006bc8;">
+              Seeking New Grad SWE & PM Roles
+            </span>
             <br>
             Software Engineer Intern @ 
-            <a href="https://www.microsoft.com/" target="_blank" class="text-muted">Microsoft</a>
-            <br>
+            <a href="https://www.microsoft.com/" target="_blank" class="text-muted">Microsoft</a><br>
             Founder @ 
             <a href="https://reinvented-sink-ea1.notion.site/Codebagel-f0f404d715b7426a837b5df8988d4532?pvs=74" target="_blank" class="text-muted">Codebagel</a>
           </p>
         </div>
       </div>
     
-      <div class="row text-center justify-content-center">
+      <div class="row text-center justify-content-center slide-in">
         <div class="col-lg-12 mt-3">
           <a id="email-button" class="btn btn-primary mx-2" href="mailto:kealan.mawhinney@gmail.com" role="button">
             <i class="fas fa-envelope"></i>
@@ -98,24 +103,24 @@
       </div>
     </div>  
 
-    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
 
     <!-- About Me -->
-    <div id="about-me" class="container mt-5">
+    <div id="about-me" class="container mt-5 slide-in">
       <h2>About Me</h2>
       
       <!-- Student & Entrepreneur -->
       <div class="row">
         <div class="col-md-7">
-          <h4>Student & Entrepreneur</h4>
+          <h4>Engineer & Product Leader</h4>
           <p class="text-muted" style="font-size:large;">
-            I am a 4th year business student at the University of British
-            Columbia. I am incredibly passionate about solving difficult
-            problems through entrepreneurship and technology. My greatest
-            strength is my ability to learn anything I put my mind to, and
-            I love to teach others who are also interested in learning.
+            I am a 4th year business technology management student at UBC.
+            I have led multiple products from concept to launch,
+            leveraging my experience in engineering, business, and design. 
+            My greatest strength is my ability to learn anything I put my mind to,
+            and I love to teach others who are also interested in learning.
           </p>
         </div>
 
@@ -271,7 +276,7 @@
     </div>
 
 
-    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
 
@@ -294,7 +299,7 @@
                     <p class="text-muted">
                       <b>Microsoft</b> | Vancouver, British Columbia, Canada
                       <br>
-                      May 2024 - Aug 2024
+                      May 2024 - Present
                     </p>
                   </div>
                   <div class="experience-text">
@@ -494,7 +499,7 @@
     </div>
 
 
-    <div class="container text-center mt-5 horizontal-line" style="width:50%; margin:0 auto;">
+    <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
 
@@ -965,5 +970,28 @@
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <!-- Typing Effect -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const text = "Hi, I'm Kealan! 👋";
+        const typingSpeed = 100;
+        const startDelay = 1500;
+        let i = 0;
+    
+        function typeWriter() {
+          if (i < text.length) {
+            document.getElementById("intro-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, typingSpeed);
+          } else {
+            document.getElementById("typing-container").style.borderRight = "none";
+          }
+        }
+    
+        setTimeout(typeWriter, startDelay);
+      });
+    </script>
+
   </body>
 </html>
