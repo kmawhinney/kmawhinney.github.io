@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0de5f50608.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    
-
 
     <title>Kealan Mawhinney</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -22,7 +20,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images/km logo.png" alt="" width="34" height="30" class="d-inline-block align-text-top">
@@ -50,8 +48,7 @@
         </div>
     </nav>
 
-
-    <!-- Socials -->
+    <!-- Header -->
     <div id="socials" class="container mt-5 fade-in">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end slide-in">
@@ -65,11 +62,14 @@
           </h1>
           <p id="lead-text" class="text-muted custom-text-align slide-in">
             <span class="badge" style="font-size:18px; background-color: #006bc8;">
-              Seeking New Grad SWE & PM Roles
+              Seeking New Grad Roles
             </span>
             <br>
-            Software Engineer Intern @ 
-            <a href="https://www.microsoft.com/" target="_blank" class="text-muted">Microsoft</a><br>
+            Prev Software Engineer Intern @ 
+            <a href="https://www.microsoft.com/" target="_blank" class="text-muted">Microsoft</a>
+            &
+            <a href="https://aws.amazon.com/" target="_blank" class="text-muted">AWS</a>
+            <br>
             Founder @ 
             <a href="https://reinvented-sink-ea1.notion.site/Codebagel-f0f404d715b7426a837b5df8988d4532?pvs=74" target="_blank" class="text-muted">Codebagel</a>
           </p>
@@ -90,12 +90,6 @@
             <i class="fab fa-github"></i>
           </a>
     
-          <!--
-          <a id="leetcode-button" class="btn btn-primary mx-2" href="https://leetcode.com/kealanm/" target="_blank" role="button">
-            <span class="iconify" style="font-size: 32px; padding-bottom: 3px; padding-right: 11px;" data-icon="simple-icons:leetcode"></span>
-          </a>
-          -->
-    
           <a id="youtube-button" class="btn btn-primary mx-2" href="https://www.youtube.com/channel/UChqNJc6T93_uRl2nvmoBm4Q" target="_blank" role="button">
             <i class="fab fa-youtube"></i>
           </a>
@@ -106,15 +100,14 @@
     <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
-
     <!-- About Me -->
-    <div id="about-me" class="container mt-5 slide-in">
+    <section id="about-me" class="container mt-5 slide-in">
       <h2>About Me</h2>
       
-      <!-- Student & Entrepreneur -->
+      <!-- First Block -->
       <div class="row">
         <div class="col-md-7">
-          <h4>Engineer & Product Leader</h4>
+          <h4>Product & Engineering</h4>
           <p class="text-muted" style="font-size:large;">
             I am a 4th year business technology management student at UBC.
             I have led multiple products from concept to launch,
@@ -132,6 +125,7 @@
             <span class="badge bg-secondary me-1"><i class="fa-brands fa-youtube"></i> YouTube</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-dumbbell"></i> Fitness</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-basketball-ball"></i> Basketball</span>
+            <span class="badge bg-secondary me-1"><i class="fa-solid fa-location-dot"></i> Travel</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-chess-knight"></i> Chess</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-diamond"></i> Cards</span>
             <span class="badge bg-secondary me-1"><i class="fa-solid fa-gamepad"></i> Games</span>
@@ -140,7 +134,7 @@
         </div>
       </div>
 
-      <!-- Software Engineering -->
+      <!-- Second Block -->
       <div class="row mt-5">
         <div class="col-md-7">
           <h4>Technical Background</h4>
@@ -160,7 +154,7 @@
           </div>
 
           <p style="font-size:medium; margin-bottom:4px;">
-            <!-- Button Column -->
+            <!-- Skills Buttons -->
             <div class="col">
               <div style="display:inline-block;">
 
@@ -202,7 +196,7 @@
               </div>
             </div>
 
-            <!-- Dropdown Column -->
+            <!-- Skills Inside Button -->
             <div class="col">
 
               <!-- Java -->
@@ -270,18 +264,14 @@
             </div>
           </p>
         </div>
-
       </div>
-
-    </div>
-
+    </section>
 
     <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
-
     <!-- Experience -->
-    <div id="experience" class="container mt-5">
+    <section id="experience" class="container mt-5">
       <h2>Experience</h2>
     
       <div class="row">
@@ -299,12 +289,18 @@
                     <p class="text-muted">
                       <b>Microsoft</b> | Vancouver, British Columbia, Canada
                       <br>
-                      May 2024 - Present
+                      May 2024 - Aug 2024
                     </p>
                   </div>
                   <div class="experience-text">
-                    <p><b>Team: </b>MSN Play</p>
-                    <p><b>Project: </b>User Profiles</p>
+                    <p>
+                      <b>Team: </b>
+                      MSN Play
+                    </p>
+                    <p>
+                      <b>Project: </b>
+                      <a href="https://www.msn.com/en-ca/play" target="_blank">User Profiles</a>
+                    </p>
                   </div>
                   <span style="background-color: #3178C6;" class="badge rounded-pill"><i class="fa-brands fa-js"></i> TypeScript</span>
                 </div>
@@ -327,12 +323,16 @@
                     <p class="text-muted">
                       <b>Codebagel</b> | Vancouver, British Columbia, Canada
                       <br>
-                      May 2022 - Present
+                      May 2022 - Aug 2024
                     </p>
                   </div>
                   <div class="experience-text">
                     <p><b>Mission: </b>Become the go-to platform for visualization-based tech education</p>
-                    <p><b>Products: </b>YouTube <em>(1.3M views, 40k subs)</em>, Website <em>(coming soon!)</em></p>
+                    <p>
+                      <b>Products: </b>
+                      <a href="https://www.youtube.com/c/codebagel" target="_blank">YouTube</a>
+                      <em>(1.5M views, 45k subs)</em>
+                    </p>
                   </div>
                   <span style="background-color: #006bc8;" class="badge rounded-pill"><i class="fa-brands fa-python"></i> Python</span>
                   <span style="background-color: #0d6042;" class="badge rounded-pill"><i class="fa-solid fa-globe"></i> Django</span>
@@ -496,15 +496,13 @@
         </button>
       </div>
 
-    </div>
-
+    </section>
 
     <div class="container text-center mt-5 horizontal-line slide-in" style="width:50%; margin:0 auto;">
     </div>
 
-
     <!-- Projects -->
-    <div id="projects" class="container mt-5">
+    <section id="projects" class="container mt-5">
           <h2>Projects</h2>
 
 
@@ -884,8 +882,7 @@
             </button>
           </div>
           
-    </div>
-
+    </section>
 
     <footer class="footer mt-5 py-4 text-white bg-dark">
       <div class="container text-center">
@@ -893,105 +890,12 @@
       </div>
     </footer>
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Projects 'See More' -->
-    <script>
-      $(document).ready(function() {
-        var projectsToShow = 1; // Number of projects to show initially
-        var totalProjects = $('#projects .card').length; // Total number of projects
-        var isExpanded = false; // Track the state of the extra projects
-    
-        // Hide extra projects initially
-        $('#projects .card:gt(' + (projectsToShow - 1) + ')').hide();
-    
-        // Toggle visibility of extra projects and update button text
-        $('#toggle-projects').click(function() {
-          if (isExpanded) {
-            $('#extra-projects .card').slideUp();
-            isExpanded = false;
-            $('#toggle-projects-text').text('See More');
-            $('#toggle-projects-icon').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-          } else {
-            $('#extra-projects .card').slideDown();
-            isExpanded = true;
-            $('#toggle-projects-text').text('See Less');
-            $('#toggle-projects-icon').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-          }
-        });
-    
-        // Hide "See More" button if all projects are initially visible
-        if (projectsToShow >= totalProjects) {
-          $('#see-more-projects').hide();
-        }
-      });
-    </script>
-
-    <!-- Experience 'See More' -->
-    <script>
-      $(document).ready(function() {
-        var experiencesToShow = 4; // Number of experiences to show initially
-        var totalExperiences = $('#experience .card').length; // Total number of experiences
-        var isExpanded = false; // Track the state of the extra experiences
-
-        // Hide extra experiences initially
-        $('#experience .card:gt(' + (experiencesToShow - 1) + ')').hide();
-
-        // Toggle visibility of extra experiences and update button text
-        $('#toggle-experience').click(function() {
-          if (isExpanded) {
-            $('#extra-experience .card').slideUp();
-            isExpanded = false;
-            $('#toggle-experience-text').text('See More');
-            $('#toggle-experience-icon').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-          } else {
-            $('#extra-experience .card').slideDown();
-            isExpanded = true;
-            $('#toggle-experience-text').text('See Less');
-            $('#toggle-experience-icon').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-          }
-        });
-
-        // Hide "See More" button if all experiences are initially visible
-        if (experiencesToShow >= totalExperiences) {
-          $('#see-more-experience').hide();
-        }
-      });
-    </script>
-  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Skills Tooltip -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
 
-    <!-- Typing Effect -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const text = "Hi, I'm Kealan! 👋";
-        const typingSpeed = 100;
-        const startDelay = 1500;
-        let i = 0;
-    
-        function typeWriter() {
-          if (i < text.length) {
-            document.getElementById("intro-text").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, typingSpeed);
-          } else {
-            document.getElementById("typing-container").style.borderRight = "none";
-          }
-        }
-    
-        setTimeout(typeWriter, startDelay);
-      });
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>
