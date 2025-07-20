@@ -1,0 +1,51 @@
+---
+import SocialButton from "./SocialButton.astro";
+
+const socials = [
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/kealanmawhinney/", icon: "fa-brands fa-linkedin" },
+    { name: "GitHub", href: "https://github.com/kmawhinney", icon: "fa-brands fa-github" },
+    { name: "YouTube", href: "https://www.youtube.com/@codebagel", icon: "fa-brands fa-youtube" },
+];
+---
+
+<footer class="bg-zinc-900 text-white mt-6 py-8 border-t border-zinc-700">
+
+  <div class="container mx-auto flex flex-col sm:flex-row justify-between items-start px-6 gap-6">
+    
+    <div>
+      <div class="sm:gap-4 gap-1 sm:grid sm:grid-cols-2 flex flex-row">
+        {socials.map(social => (
+          <SocialButton href={social.href} icon={social.icon} label={social.name} />
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <div class="flex gap-2 justify-center sm:justify-end items-center text-green-50">
+        <span class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        </span>
+        0% AI generated writing!
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-16">
+      <div>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-gray-400 hover:text-white transition">Home</a></li>
+          <li><a href="/career" class="text-gray-400 hover:text-white transition">Career</a></li>
+          <li><a href="/projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-2">
+          <li><a href="/fitness" class="text-gray-400 hover:text-white transition">Fitness</a></li>
+          <li><a href="/travel" class="text-gray-400 hover:text-white transition">Travel</a></li>
+          <li><a href="/blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>

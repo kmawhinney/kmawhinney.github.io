@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+---
+
+<Layout title="Kealan Mawhinney - Blog">
+  <h1 class="text-3xl font-bold mb-2">Blog</h1>
+  <p class="text-lg mb-8 italic text-zinc-300">I have a lot of thoughts... here are some I feel strongly about!</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <Card
+      title="First Post Coming Soon!"
+      description="First post coming soon! Stay tuned for updates."
+      src1="https://placehold.co/600x400?text=Coming+Soon!"
+      loading="eager"
+      date="TBD"
+      href="/blog"
+      tags={["Career"]}
+    />
+  </div>
+</Layout>

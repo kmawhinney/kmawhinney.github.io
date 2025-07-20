@@ -1,0 +1,101 @@
+---
+const categories = [
+  { name: "Strength 🏋️‍♂️", value: "strength" },
+  { name: "Cardio 🏃‍♂️", value: "cardio" },
+];
+
+const currentGoals = [
+  { name: "Sub-25 5k 🏃‍♂️" },
+  { name: "Sub-50 10k 🏃‍♂️" },
+  { name: "Bench 225 🏋️‍♂️" },
+];
+---
+
+<aside id="sidebar" class="sm:w-1/4 w-full sm:flex hidden sm:sticky top-[calc(64px+16px)] self-start space-y-4 flex-col rounded-lg">    
+    <!-- Fitness Categories -->
+    <div class="border border-zinc-700 rounded-lg shadow-md p-4">
+      <h2 class="text-lg font-semibold mb-2">Categories</h2>
+      <ul class="text-gray-400 space-y-1">
+        <li>
+          <button 
+            class="filter-btn text-left w-full cursor-pointer hover:bg-zinc-700 py-1 transition-colors rounded-md"
+            data-filter="all"
+          >
+            All
+          </button>
+        </li>
+        {categories.map((item) => (
+          <li>
+            <button 
+              class="filter-btn text-left w-full cursor-pointer hover:bg-zinc-700 py-1 transition-colors rounded-md"
+              data-filter={item.value}
+            >
+              {item.name}
+            </button>
+          </li>
+        ))}
+      </ul>
+      
+    </div>
+
+    <!-- Current Goals -->
+    <div class="border border-zinc-700 rounded-lg shadow-md p-4">
+      <h2 class="text-lg font-semibold mb-2">Current Goals</h2>
+      <ul class="text-gray-400 space-y-2">
+        {currentGoals.map((item) => (
+          <li>
+            <p>{item.name}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+</aside>
+
+
+<script is:inline>
+  function initializeFitnessFilter() {
+    const fitnessPage = document.querySelector(".fitness-page");
+    if (!fitnessPage) return; // Ensure script only runs on Fitness page
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const cardsContainer = document.querySelector(".grid"); // Use correct container
+    const allCards = Array.from(document.querySelectorAll(".fitness-card")); // Select only fitness cards
+
+    if (!filterButtons.length || !allCards.length) return;
+
+    function applyFilter(filter) {
+      // Reset button styles
+      filterButtons.forEach(btn => {
+        btn.classList.remove("text-white", "font-bold");
+        btn.classList.add("text-gray-400", "hover:text-white");
+      });
+
+      // Highlight active button
+      const activeButton = document.querySelector(`[data-filter="${filter}"]`);
+      if (activeButton) {
+        activeButton.classList.remove("text-gray-400", "hover:text-white");
+        activeButton.classList.add("text-white", "font-bold");
+      }
+
+      // Clear container and re-add filtered elements
+      cardsContainer.innerHTML = ""; // Clears grid
+      allCards.forEach(card => {
+        const cardFilters = card.dataset.filter.split(" "); // Convert filter attribute to array
+        if (filter === "all" || cardFilters.includes(filter)) {
+          cardsContainer.appendChild(card); // Re-add only matching cards
+        }
+      });
+    }
+
+    // Attach event listeners
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => applyFilter(button.dataset.filter));
+    });
+
+    // Set default filter to "All"
+    applyFilter("all");
+  }
+
+  // Initialize filter on page load
+  document.addEventListener("astro:page-load", initializeFitnessFilter);
+</script>

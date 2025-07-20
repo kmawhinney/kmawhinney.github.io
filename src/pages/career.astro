@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CareerCard from "../components/CareerCard.astro";
+import FilterControls from "../components/FilterControls.astro";
+---
+
+<Layout title="Kealan Mawhinney - Career">
+  <div class="career-page">
+    <h1 class="text-3xl font-bold mb-2">Career</h1>
+    <p class="text-lg mb-8 italic text-zinc-300">My career journey so far - click a tab to filter by category!</p>
+
+    <FilterControls filters={[
+      { label: "All", value: "all" },
+      { label: "Jobs", value: "jobs" },
+      { label: "Education", value: "education" }
+    ]} />
+
+    <div>
+      <CareerCard
+        title="Software Engineer"
+        company="Meta"
+        description="🤖 AI Infra - Optimizing AI inference capacity to enhance Meta's AI infrastructure efficiency and scalability"
+        src="/src/assets/career/meta-logo.jpeg"
+        date="Jul 2025 - Present"
+        category="jobs"
+      />
+
+      <!--
+      <CareerCard
+        title="Master's Student"
+        company="Georgia Tech"
+        description="🎓 Master's of Computer Science - Specializing in Machine Learning"
+        src="/src/assets/career/gt-logo.jpeg"
+        date="Jan 2025 - Present"
+        category="education"
+      />
+      -->
+
+      <!--
+      <CareerCard
+        title="Product Lead"
+        company="AlgoMonster"
+        description="🧩 AlgoMonster - Led product strategy and launched key features that drove major platform growth"
+        src="/src/assets/career/algomonster-logo.jpg"
+        date="Aug 2024 - May 2025"
+        category="jobs"
+      />
+      -->
+
+      <CareerCard
+        title="Software Engineer Intern"
+        company="Microsoft"
+        description="🎮 MSN Play - Built user profiles from concept to launch (0-1)"
+        src="/src/assets/career/microsoft-logo.png"
+        date="May 2024 - Aug 2024"
+        category="jobs"
+      />
+
+      <CareerCard
+        title="Software Engineer Intern"
+        company="NimbleRx"
+        description="💊 Nimble Experience - Built refrigerated compound shipping & feature toggling"
+        src="/src/assets/career/nimble-logo.jpeg"
+        date="Jan 2024 - Apr 2024"
+        category="jobs"
+      />
+
+      <CareerCard
+        title="Software Engineer Intern"
+        company="Amazon Web Services"
+        description="☁️ Amazon S3 - Built framework for region build tooling"
+        src="/src/assets/career/aws-logo.jpeg"
+        date="May 2023 - Aug 2023"
+        category="jobs"
+      />
+
+      <CareerCard
+        title="Management Consultant Intern"
+        company="BDO Canada"
+        description="🚀 Go-To-Market Strategy - Helped businesses bring their products from innovation to market"
+        src="/src/assets/career/bdo-canada-logo.jpeg"
+        date="Aug 2021 - Dec 2021"
+        category="jobs"
+      />
+
+      <CareerCard
+        title="Undergraduate Student"
+        company="UBC"
+        description="🎓 Bachelor's of Commerce - Specialized in Business Technology Management"
+        src="/src/assets/career/ubc-logo.jpeg"
+        date="Sep 2020 - Dec 2024"
+        category="education"
+      />
+    </div>
+  </div>
+</Layout>

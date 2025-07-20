@@ -1,0 +1,61 @@
+---
+const { filters = [] } = Astro.props;
+---
+
+<div class="flex border border-zinc-700 rounded-lg overflow-hidden my-8">
+  {filters.map((filter: { label: string; value: string }) => (
+    <button 
+      class="filter-btn flex-1 py-2 px-4 text-sm font-medium text-center 
+             bg-zinc-800 cursor-pointer transition-colors 
+             hover:bg-zinc-700"
+      data-filter={filter.value}
+    >
+      {filter.label}
+    </button>
+  ))}
+</div>
+
+
+<script is:inline>
+  function initializeCareerFilter() {
+    const careerPage = document.querySelector(".career-page");
+    if (!careerPage) return; // Ensure script runs only on Career page
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".card");
+
+    if (!filterButtons.length || !cards.length) return;
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        // Reset all buttons
+        filterButtons.forEach(btn => {
+          btn.classList.remove("bg-zinc-600", "text-white");
+          btn.classList.add("bg-zinc-800", "hover:bg-zinc-700");
+        });
+
+        // Highlight selected button
+        button.classList.remove("bg-zinc-800", "hover:bg-zinc-700");
+        button.classList.add("bg-zinc-600", "text-white");
+
+        // Filter the cards
+        cards.forEach(card => {
+          if (filter === "all" || card.dataset.category === filter) {
+            card.style.display = "flex"; // Show matching cards
+          } else {
+            card.style.display = "none"; // Hide non-matching cards
+          }
+        });
+      });
+    });
+
+    // Set initial active state on "All" button
+    const defaultActive = document.querySelector("[data-filter='jobs']");
+    if (defaultActive) defaultActive.click();
+  }
+
+  document.addEventListener("astro:page-load", initializeCareerFilter);
+  document.addEventListener("DOMContentLoaded", initializeCareerFilter);
+</script>

@@ -1,0 +1,16 @@
+---
+const isActive = Astro.url.pathname === "/blog";
+---
+
+<a
+  href="/blog"
+  class={`inline-flex items-center gap-2 px-4 py-2 font-bold rounded-md
+          text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700
+          font-mono tracking-tight uppercase shadow-sm
+          focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-600
+          focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900
+          transition ${isActive ? "underline" : ""}`}
+>
+  <i class="fa-solid fa-scroll"></i>
+  Blog
+</a>

@@ -1,0 +1,53 @@
+---
+import NavLink from "./NavLink.astro";
+
+const { items = [] } = Astro.props; // Accepts unlimited links
+---
+
+<div class="relative">
+    <button id="dropdown-toggle" class="px-4 py-2 text-white bg-zinc-800 rounded-md transition hover:bg-zinc-700 hover:cursor-pointer">
+        More ▼
+    </button>
+
+    <ul id="dropdown-menu" class="absolute right-0 mt-2 w-48 bg-zinc-800 border border-zinc-700 rounded-md shadow-lg hidden">
+        {items.map((item: { title: string; href: string }) => (
+            <li class="w-full">
+                <NavLink 
+                    title={item.title} 
+                    href={item.href} 
+                    inDropdown={true}
+                />
+            </li>
+        ))}
+    </ul>
+</div>
+
+<script is:inline>
+    function initializeDropdown() {
+        const toggleButton = document.getElementById("dropdown-toggle");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        if (!toggleButton || !dropdownMenu) return;
+
+        // Remove any existing event listeners before re-adding them
+        toggleButton.replaceWith(toggleButton.cloneNode(true));
+        dropdownMenu.classList.add("hidden"); // Ensure it starts closed
+
+        const newToggleButton = document.getElementById("dropdown-toggle");
+
+        newToggleButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            dropdownMenu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!newToggleButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add("hidden");
+            }
+        });
+    }
+
+    // Run on page load and on Astro's page changes
+    document.addEventListener("astro:page-load", initializeDropdown);
+    document.addEventListener("DOMContentLoaded", initializeDropdown);
+</script>

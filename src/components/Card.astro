@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+
+const { title, description, cardType, src1, src2, date, href, filter, tags, loading, badge } = Astro.props;
+---
+
+<a href={href} class="block">
+  <div class={`${cardType}-card bg-zinc-800 border border-zinc-700 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-[1.015] select-none`} data-filter={filter}>
+    
+    {src2 ? (
+      <div class="grid grid-cols-2 gap-1">
+        <Image src={src1} alt={title} class="w-full h-48 object-cover " width="60" height="40" loading={loading} />
+        <Image src={src2} alt={title} class="w-full h-48 object-cover" width="60" height="40" loading={loading} />
+      </div>
+    ) : (
+      <Image src={src1} alt={title} class="w-full h-48 object-cover" width="60" height="40" loading={loading} />
+    )}
+
+    <div class="p-4">
+      <div class="flex flex-row justify-between items-center mb-2">
+        <div class="flex items-center gap-2">
+          <h2 class="text-xl font-bold">{title}</h2>
+          {badge && (
+            <span class="bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded">
+              {badge}
+            </span>
+          )}
+        </div>
+        <p class="text-sm text-gray-400 sm:ml-4">{date}</p>
+      </div>      
+
+      <p class="text-sm">{description}</p>
+
+      {tags?.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-2">
+          {tags.map((tag: string) => (
+            <span class="px-2 py-1 text-xs font-medium bg-zinc-700 text-gray-300 rounded-md">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</a>

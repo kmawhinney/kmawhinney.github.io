@@ -1,0 +1,153 @@
+---
+import { Image } from 'astro:assets';
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Kealan Mawhinney">
+  <div class="flex flex-col gap-6" x-data="{ openCard: 0 }">
+
+    <!-- Profile Section -->
+    <div class="flex items-center gap-4 px-4 mb-2">
+      <Image src="/src/assets/portfolio-photo.jpeg" alt="Headshot" 
+            class="w-25 h-25 rounded-full object-cover" height="25" width="25" loading="eager"/>
+      
+      <div class="flex flex-col">
+        <h1 class="text-3xl font-bold mb-2">Hi, I'm Kealan!</h1>
+        <p class="text-xl text-zinc-300 sm:flex hidden items-center gap-1">
+          <i class="fa-solid fa-hexagon-nodes mr-1"></i>
+          AI Infra Engineer at Meta
+        </p>
+        <p class="text-xl italic text-zinc-300 sm:flex hidden items-center gap-1">
+          <i class="fa-solid fa-location-dot mr-1"></i>
+          Seattle, WA
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="flex flex-col gap-4 px-4">
+
+      <!-- About Me -->
+      <div class="bg-zinc-800 border border-zinc-700 rounded-lg shadow-md">
+        <div class="flex justify-between items-center p-5 cursor-pointer" @click="openCard = openCard === 0 ? -1 : 0">
+          <h3 class="text-xl font-bold">
+            <i class="fa-solid fa-address-card mr-1"></i> About Me
+          </h3>
+          <i class="fa-solid fa-chevron-down transition-transform duration-300" :class="openCard === 0 ? 'rotate-180' : ''"></i>
+        </div>
+        <div class="overflow-hidden transition-all duration-300 ease-in-out"
+             :class="openCard === 0 ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0 py-0'">
+          <div class="px-5">
+            <p class="mb-4">
+              With a background in software engineering, product management, and entrepreneurship, I'm passionate about all things technology. My unique skillset is being able to <b>bridge the gap between vision, strategy, and execution</b>, outlined below in the section: 
+              <span class="text-blue-400 cursor-pointer hover:underline" @click="openCard = 1">Closing the Loop</span>.
+            </p>
+            <!--
+            <p class="mb-4">
+              My greatest strength is my ability to learn anything I put my mind to. As a business undergrad, I <b>taught myself to code from scratch</b>, going from self-taught to working at the biggest tech companies like Meta, AWS, and Microsoft, in just a few years. I love to learn, and whatever I don't know, I'm confident I can figure out.
+            </p>
+             -->
+            <hr class="border-t border-zinc-700 mb-4">
+            <p class="mb-4">
+              Outside my professional pursuits, I have a wide assortment of things I'm passionate about. I love spending time with family & friends, playing anything competitive (sports, board games, video games), watching movies, creating video content, and more!
+            </p>
+            <p>
+              I also love fitness and traveling, both of which are documented on this website - feel free to check them out!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing the Loop -->
+      <div class="bg-zinc-800 border border-zinc-700 rounded-lg shadow-md">
+        <div class="flex justify-between items-center p-5 cursor-pointer" @click="openCard = openCard === 1 ? -1 : 1">
+          <h3 class="text-xl font-bold">
+            <i class="fa-solid fa-arrows-spin"></i> Closing the Loop
+          </h3>
+          <i class="fa-solid fa-chevron-down transition-transform duration-300" :class="openCard === 1 ? 'rotate-180' : ''"></i>
+        </div>
+        <div class="overflow-hidden transition-all duration-300 ease-in-out"
+             :class="openCard === 1 ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0 py-0'">
+          <div class="px-5">
+            <p class="mb-2"><i><b>Vision</b></i> is knowing where we need to go long-term - deciding where we should be in 5, 10, even 25 years.</p>
+            <p class="mb-2"><i><b>Strategy</b></i> is the roadmap to get there - prioritizing, making decisions, and organizing a clear path.</p>
+            <p class="mb-4"><i><b>Execution</b></i> is making it happen - actually building towards our vision, step-by-step.</p>
+            <hr class="border-t border-zinc-700 mb-2">
+            <p class="mb-4">
+              These stages make up the loop of taking an idea and turning it into a success.
+            </p>
+            <p class="mb-4">
+              Every organization, whether a startup or a Fortune 500 company, moves through these stages. While there are many skilled people who excel in one stage, a major challenge that exists is bridging the gaps between them.
+            </p>
+            <p class="mb-4">
+              That's why my goal has always been to "close the loop" by being capable across this entire cycle, connecting vision, strategy, and execution to drive success.
+            </p>
+            <p>
+              Through my experience in entrepreneurship, product leadership, and software engineering, I've developed a skill set across all three stages, making me capable of bridging the gaps between them. <b>I'm able to work as a product-minded engineer, a technically-proficient product manager, and anything in between.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accomplishments -->
+      <div class="bg-zinc-800 border border-zinc-700 rounded-lg shadow-md">
+        <div class="flex justify-between items-center p-5 cursor-pointer" @click="openCard = openCard === 3 ? -1 : 3">
+          <h3 class="text-xl font-bold">
+            <i class="fa-solid fa-trophy mr-1"></i> Accomplishments
+          </h3>
+          <i class="fa-solid fa-chevron-down transition-transform duration-300" :class="openCard === 3 ? 'rotate-180' : ''"></i>
+        </div>
+        <div class="overflow-hidden transition-all duration-300 ease-in-out"
+             :class="openCard === 3 ? 'max-h-[1000px] opacity-100 pb-4' : 'max-h-0 opacity-0 py-0'">
+          <div class="px-5">
+            <ul class="list-disc list-inside space-y-1">
+              <li>Taught myself how to code from scratch, leading to work at Meta, Microsoft, and AWS.</li>
+              <li>Grew my animated tech YouTube brand to 70,000+ subscribers and over 2.5M unique views.</li>
+              <li>Ran my first half-marathon in sub-2 hours (marathon up next!).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</Layout>
+
+
+<style>
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.7s ease-out forwards;
+  }
+</style>
+
+<!-- Alpine.js for dropdown functionality -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<script is:inline>
+  function initializeAnimations() {
+    const cards = document.querySelectorAll(".animate-card");
+
+    cards.forEach((card, index) => {
+      setTimeout(() => {
+        card.classList.add("animate-slide-in");
+      }, index * 300); // Adds 300ms delay between each card
+    });
+  }
+
+  // Run animation on initial load
+  document.addEventListener("DOMContentLoaded", initializeAnimations);
+  // Run animation on Astro navigation
+  document.addEventListener("astro:page-load", initializeAnimations);
+</script>

@@ -1,0 +1,20 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Kealan Mawhinney - Projects">
+  <h1 class="text-3xl font-bold mb-2">Projects</h1>
+  <p class="text-lg mb-8 italic text-zinc-300">Every venture, app, website, or anything else I've worked on - click any project to learn more.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <Card
+        title="Codebagel"
+        description="Animated educational coding YouTube channel with 70,000+ subscribers, 2,500,000+ unique views."
+        src1="/src/assets/projects/codebagel/codebagel-logo.png"
+        loading="eager"
+        date="May 2022 - Jul 2024"
+        href="/projects/codebagel"
+      />
+  </div>
+</Layout>

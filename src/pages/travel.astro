@@ -1,0 +1,91 @@
+---
+import TravelSidebar from "../components/TravelSidebar.astro";
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Kealan Mawhinney - Travel">
+  <div class="travel-page flex flex-col md:flex-row gap-6">
+    <TravelSidebar />
+
+    <div class="flex-1">
+      <h1 class="text-3xl font-bold mb-2">Travel</h1>
+      <p class="text-lg mb-8 italic text-zinc-300">I haven't been everywhere, but it's on my list!</p>
+
+      <div class="grid grid-cols-1 gap-6">
+        <Card
+          title="Kelowna 2025 🇨🇦"
+          description="2025 edition of our father-son annual family golf trip, in honour of Grampy. Next year we'll be seeking a sponsorship from Fireball to accommodate our birdie frequency."
+          src1="/src/assets/travel/kelowna25-1.PNG"
+          src2="/src/assets/travel/kelowna25-2.jpeg"
+          loading="eager"
+          date="Jun 19 - Jun 22"
+          filter="canada"
+          cardType="travel"
+        />
+
+        <Card
+          title="Guatemala 2025 🇬🇹"
+          description="From local cooking and coffee classes in Antigua, to the vibrant towns of Lake Atitlán, Guatemala is one of Central America's best kept secrets."
+          src1="/src/assets/travel/guatemala25-2.jpeg"
+          src2="/src/assets/travel/guatemala25-1.jpeg"
+          loading="eager"
+          date="May 7 - May 16"
+          filter="guatemala"
+          cardType="travel"
+        />
+
+        <Card
+          title="Whistler 2025 🇨🇦"
+          description="Snowshoed to the frozen Alexander Falls in Callaghan Country after an all-nighter of drinks, games, and late night hot tubbing."
+          src1="/src/assets/travel/whistler25-2.jpeg"
+          src2="/src/assets/travel/whistler25-1.png"
+          loading="eager"
+          date="Jan 31 - Feb 1"
+          filter="canada"
+          cardType="travel"
+        />
+
+        <Card
+          title="Puerto Vallarta 2024 🇲🇽"
+          description="Nothing says Christmas (and New Year's) quite like tacos, tequila, ziplines, speedboats, and most importantly, 28° weather."
+          src1="/src/assets/travel/pv24-1.jpeg"
+          src2="/src/assets/travel/pv24-2.jpeg"
+          loading="eager"
+          date="Dec 22 - Jan 2"
+          filter="mexico"
+          cardType="travel"
+        />
+
+        <Card
+          title="San Francisco 2023 🇺🇸"
+          description="The harsh interiors of Alcatraz, the massive redwoods in Muir Woods, and the cushy tech offices in Silicon Valley - yet the insanely steep roads were the craziest part."
+          src1="/src/assets/travel/sf23-5.jpeg"
+          date="Apr 27 - Apr 30"
+          filter="usa"
+          cardType="travel"
+        />
+
+        <Card
+          title="New York 2022 🇺🇸"
+          description='Broadway, Times Square, Central Park, a dry (only for me) comedy club, and much more! "The City That Never Sleeps" is a truly apt moniker.'
+          src1="/src/assets/travel/nyc22-2.jpeg"
+          src2="/src/assets/travel/nyc22-4.jpeg"
+          date="Nov 23 - Nov 28"
+          filter="usa"
+          cardType="travel"
+        />
+
+        <Card
+          title="Europe 2022 🏴󠁧󠁢󠁥󠁮󠁧󠁿🇮🇪🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+          description="Staying in castles, visiting castles, and learning about castles. Oh, and also some of the world's best landscapes, pubs, and architecture."
+          src1="/src/assets/travel/europe22-5.jpeg"
+          src2="/src/assets/travel/europe22-2.png"
+          date="May 27 - Jun 9"
+          filter="england ireland scotland"
+          cardType="travel"
+        />
+      </div>
+    </div>
+  </div>
+</Layout>

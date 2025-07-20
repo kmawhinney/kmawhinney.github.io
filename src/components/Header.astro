@@ -1,0 +1,35 @@
+---
+import NavLink from "./NavLink.astro"
+import NavDropdown from "./NavDropdown.astro";
+import NavLinkBlog from "./NavLinkBlog.astro";
+import { Image } from 'astro:assets';
+
+const links = [
+    { title: "Career", href: "/career" },
+    { title: "Projects", href: "/projects" },
+    { title: "Travel", href: "/travel" },
+    { title: "Fitness", href: "/fitness" },
+];
+---
+
+<header class="sticky top-0 p-4 z-50 bg-zinc-900">
+    <nav class="container mx-auto flex items-center">
+        <a href="/">
+            <Image src="/src/assets/km-logo.png" alt="Logo" width="40" height="40" loading="eager"/>
+        </a>
+
+        <!-- NavLinks present on larger screens -->
+        <ul class="hidden sm:flex gap-8 ml-auto items-center">
+            {links.map((link) => (
+                <NavLink title={link.title} href={link.href} />
+            ))}
+            <NavLinkBlog />
+        </ul>
+
+        <!-- NavDropdown present on smaller screens -->
+            <div class="sm:hidden flex items-center gap-2 ml-auto">
+            <NavLinkBlog />
+            <NavDropdown items={links} />
+        </div>
+    </nav>
+</header>
