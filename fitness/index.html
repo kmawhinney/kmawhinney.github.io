@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kealan Mawhinney - Fitness</title><link rel="stylesheet" href="/src/styles/global.css"><link rel="icon" type="image/x-icon" href="/favicon.ico"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.DksKCMWR.js"></script><link rel="stylesheet" href="/_astro/index.CGiLbuzV.css"></head> <body class="bg-zinc-900 text-gray-100 max-w-4xl mx-auto flex flex-col min-h-screen"> <header class="sticky top-0 p-4 z-50 bg-zinc-900"> <nav class="container mx-auto flex items-center"> <a href="/"> <img src="/src/assets/km-logo.png" alt="Logo" loading="eager" width="40" height="40" decoding="async"> </a> <!-- NavLinks present on larger screens --> <ul class="hidden sm:flex gap-8 ml-auto items-center"> <li> <a href="/career" class="hover:underline transition-all duration-200 ease-in-out font-normal "> Career </a> </li><li> <a href="/projects" class="hover:underline transition-all duration-200 ease-in-out font-normal "> Projects </a> </li><li> <a href="/travel" class="hover:underline transition-all duration-200 ease-in-out font-normal "> Travel </a> </li><li> <a href="/fitness" class="hover:underline transition-all duration-200 ease-in-out font-normal "> Fitness </a> </li> <a href="/blog" class="inline-flex items-center gap-2 px-4 py-2 font-bold rounded-md
+          text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700
+          font-mono tracking-tight uppercase shadow-sm
+          focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-600
+          focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900
+          transition "> <i class="fa-solid fa-scroll"></i>
+Blog
+</a> </ul> <!-- NavDropdown present on smaller screens --> <div class="sm:hidden flex items-center gap-2 ml-auto"> <a href="/blog" class="inline-flex items-center gap-2 px-4 py-2 font-bold rounded-md
+          text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700
+          font-mono tracking-tight uppercase shadow-sm
+          focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-600
+          focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900
+          transition "> <i class="fa-solid fa-scroll"></i>
+Blog
+</a> <div class="relative"> <button id="dropdown-toggle" class="px-4 py-2 text-white bg-zinc-800 rounded-md transition hover:bg-zinc-700 hover:cursor-pointer">
+More ▼
+</button> <ul id="dropdown-menu" class="absolute right-0 mt-2 w-48 bg-zinc-800 border border-zinc-700 rounded-md shadow-lg hidden"> <li class="w-full"> <li> <a href="/career" class="hover:underline transition-all duration-200 ease-in-out font-normal block w-full px-4 py-3 text-white hover:bg-zinc-700 rounded-md transition"> Career </a> </li> </li><li class="w-full"> <li> <a href="/projects" class="hover:underline transition-all duration-200 ease-in-out font-normal block w-full px-4 py-3 text-white hover:bg-zinc-700 rounded-md transition"> Projects </a> </li> </li><li class="w-full"> <li> <a href="/travel" class="hover:underline transition-all duration-200 ease-in-out font-normal block w-full px-4 py-3 text-white hover:bg-zinc-700 rounded-md transition"> Travel </a> </li> </li><li class="w-full"> <li> <a href="/fitness" class="hover:underline transition-all duration-200 ease-in-out font-normal block w-full px-4 py-3 text-white hover:bg-zinc-700 rounded-md transition"> Fitness </a> </li> </li> </ul> </div> <script>
+    function initializeDropdown() {
+        const toggleButton = document.getElementById("dropdown-toggle");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        if (!toggleButton || !dropdownMenu) return;
+
+        // Remove any existing event listeners before re-adding them
+        toggleButton.replaceWith(toggleButton.cloneNode(true));
+        dropdownMenu.classList.add("hidden"); // Ensure it starts closed
+
+        const newToggleButton = document.getElementById("dropdown-toggle");
+
+        newToggleButton.addEventListener("click", (event) => {
+            event.stopPropagation();
+            dropdownMenu.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!newToggleButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add("hidden");
+            }
+        });
+    }
+
+    // Run on page load and on Astro's page changes
+    document.addEventListener("astro:page-load", initializeDropdown);
+    document.addEventListener("DOMContentLoaded", initializeDropdown);
+</script> </div> </nav> </header> <main class="container mx-auto p-4 flex-grow">  <div class="fitness-page flex flex-col md:flex-row gap-6"> <aside id="sidebar" class="sm:w-1/4 w-full sm:flex hidden sm:sticky top-[calc(64px+16px)] self-start space-y-4 flex-col rounded-lg"> <!-- Fitness Categories --> <div class="border border-zinc-700 rounded-lg shadow-md p-4"> <h2 class="text-lg font-semibold mb-2">Categories</h2> <ul class="text-gray-400 space-y-1"> <li> <button class="filter-btn text-left w-full cursor-pointer hover:bg-zinc-700 py-1 transition-colors rounded-md" data-filter="all">
+All
+</button> </li> <li> <button class="filter-btn text-left w-full cursor-pointer hover:bg-zinc-700 py-1 transition-colors rounded-md" data-filter="strength"> Strength 🏋️‍♂️ </button> </li><li> <button class="filter-btn text-left w-full cursor-pointer hover:bg-zinc-700 py-1 transition-colors rounded-md" data-filter="cardio"> Cardio 🏃‍♂️ </button> </li> </ul> </div> <!-- Current Goals --> <div class="border border-zinc-700 rounded-lg shadow-md p-4"> <h2 class="text-lg font-semibold mb-2">Current Goals</h2> <ul class="text-gray-400 space-y-2"> <li> <p>Sub-25 5k 🏃‍♂️</p> </li><li> <p>Sub-50 10k 🏃‍♂️</p> </li><li> <p>Bench 225 🏋️‍♂️</p> </li> </ul> </div> </aside> <script>
+  function initializeFitnessFilter() {
+    const fitnessPage = document.querySelector(".fitness-page");
+    if (!fitnessPage) return; // Ensure script only runs on Fitness page
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const cardsContainer = document.querySelector(".grid"); // Use correct container
+    const allCards = Array.from(document.querySelectorAll(".fitness-card")); // Select only fitness cards
+
+    if (!filterButtons.length || !allCards.length) return;
+
+    function applyFilter(filter) {
+      // Reset button styles
+      filterButtons.forEach(btn => {
+        btn.classList.remove("text-white", "font-bold");
+        btn.classList.add("text-gray-400", "hover:text-white");
+      });
+
+      // Highlight active button
+      const activeButton = document.querySelector(`[data-filter="${filter}"]`);
+      if (activeButton) {
+        activeButton.classList.remove("text-gray-400", "hover:text-white");
+        activeButton.classList.add("text-white", "font-bold");
+      }
+
+      // Clear container and re-add filtered elements
+      cardsContainer.innerHTML = ""; // Clears grid
+      allCards.forEach(card => {
+        const cardFilters = card.dataset.filter.split(" "); // Convert filter attribute to array
+        if (filter === "all" || cardFilters.includes(filter)) {
+          cardsContainer.appendChild(card); // Re-add only matching cards
+        }
+      });
+    }
+
+    // Attach event listeners
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => applyFilter(button.dataset.filter));
+    });
+
+    // Set default filter to "All"
+    applyFilter("all");
+  }
+
+  // Initialize filter on page load
+  document.addEventListener("astro:page-load", initializeFitnessFilter);
+</script> <div class="flex-1"> <h1 class="text-3xl font-bold mb-2">Fitness</h1> <p class="text-lg mb-8 italic text-zinc-300">"It is a shame for a man to grow old, without seeing the beauty and strength of which his body is capable." - Socrates</p> <div class="grid grid-cols-1 gap-6"> <a class="block"> <div class="fitness-card bg-zinc-800 border border-zinc-700 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-[1.015] select-none" data-filter="cardio"> <div class="grid grid-cols-2 gap-1"> <img src="/src/assets/fitness/bmo-half-1.jpeg" alt="BMO Half Marathon 2025" loading="eager" width="60" height="40" decoding="async" class="w-full h-48 object-cover "> <img src="/src/assets/fitness/bmo-half-2.jpg" alt="BMO Half Marathon 2025" loading="eager" width="60" height="40" decoding="async" class="w-full h-48 object-cover"> </div> <div class="p-4"> <div class="flex flex-row justify-between items-center mb-2"> <div class="flex items-center gap-2"> <h2 class="text-xl font-bold">BMO Half Marathon 2025</h2> <span class="bg-yellow-600 text-white text-xs font-semibold px-2 py-1 rounded"> PR: 1:59:51 </span> </div> <p class="text-sm text-gray-400 sm:ml-4">May 4, 2025</p> </div> <p class="text-sm">Ran with family in my first race, the Vancouver BMO Half Marathon, along the Seawall and through Stanley Park!</p>  </div> </div> </a> </div> </div> </div>  </main> <footer class="bg-zinc-900 text-white mt-6 py-8 border-t border-zinc-700"> <div class="container mx-auto flex flex-col sm:flex-row justify-between items-start px-6 gap-6"> <div> <div class="sm:gap-4 gap-1 sm:grid sm:grid-cols-2 flex flex-row"> <a href="https://www.linkedin.com/in/kealanmawhinney/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 px-2 py-1 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-all duration-300 shadow-lg border border-zinc-700 hover:border-zinc-600 focus:ring-2 focus:ring-zinc-500 focus:outline-none"> <i class="fa-brands fa-linkedin text-xl"></i> <span class="inline">LinkedIn</span> </a><a href="https://github.com/kmawhinney" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 px-2 py-1 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-all duration-300 shadow-lg border border-zinc-700 hover:border-zinc-600 focus:ring-2 focus:ring-zinc-500 focus:outline-none"> <i class="fa-brands fa-github text-xl"></i> <span class="inline">GitHub</span> </a><a href="https://www.youtube.com/@codebagel" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 px-2 py-1 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-all duration-300 shadow-lg border border-zinc-700 hover:border-zinc-600 focus:ring-2 focus:ring-zinc-500 focus:outline-none"> <i class="fa-brands fa-youtube text-xl"></i> <span class="inline">YouTube</span> </a> </div> </div> <div> <div class="flex gap-2 justify-center sm:justify-end items-center text-green-50"> <span class="relative flex h-3 w-3"> <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span> <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span> </span>
+0% AI generated writing!
+</div> </div> <div class="grid grid-cols-2 gap-16"> <div> <ul class="space-y-2"> <li><a href="/" class="text-gray-400 hover:text-white transition">Home</a></li> <li><a href="/career" class="text-gray-400 hover:text-white transition">Career</a></li> <li><a href="/projects" class="text-gray-400 hover:text-white transition">Projects</a></li> </ul> </div> <div> <ul class="space-y-2"> <li><a href="/fitness" class="text-gray-400 hover:text-white transition">Fitness</a></li> <li><a href="/travel" class="text-gray-400 hover:text-white transition">Travel</a></li> <li><a href="/blog" class="text-gray-400 hover:text-white transition">Blog</a></li> </ul> </div> </div> </div> </footer> </body></html>
