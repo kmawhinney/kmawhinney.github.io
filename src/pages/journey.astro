@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Timeline from '../components/Timeline.astro';
+import { getJourney } from '../lib/collections';
+
+const entries = await getJourney();
+---
+
+<Base title="Journey" description="Where I've worked, studied and what I've built along the way.">
+  <PageHead
+    title="Journey"
+    intro="Where I've worked, what I've studied, and the milestones along the way."
+  />
+  <hr class="rule" />
+  <section class="column">
+    <Timeline entries={entries} />
+  </section>
+</Base>
+
+<style>
+  section {
+    padding-top: 56px;
+    padding-bottom: 96px;
+  }
+</style>

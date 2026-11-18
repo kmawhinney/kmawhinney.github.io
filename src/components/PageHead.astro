@@ -1,0 +1,32 @@
+---
+// Header block for inner pages: serif title with optional intro.
+interface Props {
+  title: string;
+  intro?: string;
+}
+const { title, intro } = Astro.props;
+---
+
+<div class="head column">
+  <h1>{title}</h1>
+  {intro && <p class="intro">{intro}</p>}
+  <slot />
+</div>
+
+<style>
+  .head {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+  .intro {
+    margin-top: 16px;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--muted-2);
+  }
+</style>

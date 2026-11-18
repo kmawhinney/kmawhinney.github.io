@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import photo from '../assets/profile.jpeg';
+import { SITE } from '../lib/site';
+
+interface Props {
+  size?: number;
+}
+const { size = 96 } = Astro.props;
+---
+
+<Image
+  src={photo}
+  alt={`Portrait of ${SITE.name}`}
+  width={size * 2}
+  height={size * 2}
+  style={`width:${size}px;height:${size}px`}
+  class="portrait"
+  loading="eager"
+/>
+
+<style>
+  .portrait {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px var(--line);
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import PostList from '../../components/PostList.astro';
+import AiNote from '../../components/AiNote.astro';
+import { getPosts } from '../../lib/collections';
+
+const posts = await getPosts();
+---
+
+<Base title="Insights" description="Insights on tech, AI, and career growth by Kealan Mawhinney.">
+  <script is:inline>
+    // Play the list animation only on the first visit of a session.
+    try {
+      if (sessionStorage.getItem('insights-seen')) document.documentElement.classList.add('insights-seen');
+      else sessionStorage.setItem('insights-seen', '1');
+    } catch {}
+  </script>
+  <PageHead title="Insights" intro="My philosophies on tech, AI, and career growth." />
+  <hr class="rule" />
+  <section class="column list">
+    {
+      posts.length > 0 ? (
+        <>
+          <PostList posts={posts} />
+          <AiNote />
+        </>
+      ) : (
+        <p class="empty">First posts coming soon.</p>
+      )
+    }
+  </section>
+</Base>
+
+<style>
+  .empty {
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--muted-2);
+  }
+  .list {
+    padding-top: 40px;
+    padding-bottom: 72px;
+  }
+
+  /* First-visit entrance: rows fade up one after another */
+  @media (prefers-reduced-motion: no-preference) {
+    :global(html:not(.insights-seen)) .list :global(li) {
+      animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      animation-delay: calc(80ms + min(var(--i, 0) * 70ms, 600ms));
+    }
+    :global(html:not(.insights-seen)) .list :global(.ai-note) {
+      animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.35s both;
+    }
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+</style>

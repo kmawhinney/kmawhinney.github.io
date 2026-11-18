@@ -1,0 +1,78 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { getPosts } from '../../lib/collections';
+import { formatShortDate } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Base title={post.data.title} description={post.data.description} type="article" publishedTime={post.data.date}>
+  <article class="column">
+    <a href="/insights" class="back">← Insights</a>
+    <header>
+      <time datetime={post.data.date.toISOString()}>
+        {formatShortDate(post.data.date)}
+      </time>
+      <h1>{post.data.title}</h1>
+      {post.data.draft && <p class="draft">Draft · only visible on the dev server</p>}
+    </header>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  article {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 48px;
+    font-size: 13px;
+    color: var(--muted-2);
+    text-decoration: none;
+  }
+  .back:hover {
+    color: var(--ink);
+  }
+  header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  /* Same date style as the Insights list */
+  time {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #7c7c78;
+    font-variant-numeric: tabular-nums;
+  }
+  .draft {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #fdf1d8;
+    color: #8a5a00;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+  @media (max-width: 560px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
+</style>

@@ -1,0 +1,40 @@
+---
+// Small callout about how AI is (and isn't) used in the writing. Shown under post lists.
+---
+
+<p class="ai-note">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M9 18h6M10 21h4" />
+    <path d="M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0 0 12 3z" />
+  </svg>
+  <span>
+    Every insight here comes <b>100% from me</b>. I only occasionally use AI to refine wording.
+  </span>
+</p>
+
+<style>
+  .ai-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 28px;
+    padding: 12px 16px;
+    background: var(--fill);
+    border-radius: 10px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #6b6b67;
+    text-wrap: pretty;
+  }
+  svg {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    color: #8d8d8a;
+  }
+  b {
+    font-weight: 500;
+    color: var(--ink-soft);
+  }
+</style>

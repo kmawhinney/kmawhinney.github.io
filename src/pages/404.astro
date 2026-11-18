@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Not found">
+  <section class="column">
+    <h1>Page not found</h1>
+    <p class="text">
+      That page doesn't exist. <a href="/">Go home</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .text {
+    margin-top: 20px;
+    font-family: var(--serif);
+    font-size: 18px;
+    color: var(--muted-2);
+  }
+</style>

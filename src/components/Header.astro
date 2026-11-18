@@ -1,34 +1,80 @@
 ---
-import NavLink from "./NavLink.astro"
-import NavDropdown from "./NavDropdown.astro";
-import NavLinkBlog from "./NavLinkBlog.astro";
-import { Image } from 'astro:assets';
+import Mark from './Mark.astro';
+import { SITE } from '../lib/site';
 
-const links = [
-    { title: "Career", href: "/career" },
-    { title: "Travel", href: "/travel" },
-    { title: "Fitness", href: "/fitness" },
+const nav = [
+  { label: 'Journey', href: '/journey' },
+  { label: 'Insights', href: '/insights' },
 ];
+
+const path = Astro.url.pathname.replace(/\/$/, '');
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
 ---
 
-<header class="sticky top-0 p-4 z-50 bg-zinc-900">
-    <nav class="container mx-auto flex items-center">
-        <a href="/">
-            <Image src="/km-logo.png" alt="Logo" width="40" height="40" loading="eager"/>
+<header>
+  <a href="/" class="brand" aria-label={`${SITE.name}, home`}>
+    <Mark />
+    <span>{SITE.name}</span>
+  </a>
+  <nav aria-label="Main">
+    {
+      nav.map((item) => (
+        <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+          {item.label}
         </a>
-
-        <!-- NavLinks present on larger screens -->
-        <ul class="hidden sm:flex gap-8 ml-auto items-center">
-            {links.map((link) => (
-                <NavLink title={link.title} href={link.href} />
-            ))}
-            <NavLinkBlog />
-        </ul>
-
-        <!-- NavDropdown present on smaller screens -->
-            <div class="sm:hidden flex items-center gap-2 ml-auto">
-            <NavLinkBlog />
-            <NavDropdown items={links} />
-        </div>
-    </nav>
+      ))
+    }
+  </nav>
 </header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 30px 40px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Instrument Serif', var(--serif);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1;
+    /* Instrument Serif has no bold cut; thicken the strokes instead */
+    -webkit-text-stroke: 0.6px currentColor;
+  }
+  nav {
+    display: flex;
+    gap: 52px;
+  }
+  nav a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    color: var(--muted-2);
+    transition: color 0.15s ease;
+  }
+  nav a:hover,
+  nav a[aria-current='page'] {
+    color: var(--ink);
+  }
+  @media (max-width: 720px) {
+    header {
+      padding: 22px 24px;
+    }
+    nav {
+      gap: 22px;
+    }
+  }
+  @media (max-width: 420px) {
+    .brand span {
+      display: none;
+    }
+  }
+</style>

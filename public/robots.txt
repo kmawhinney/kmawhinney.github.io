@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kealanmawhinney.com/sitemap-index.xml
